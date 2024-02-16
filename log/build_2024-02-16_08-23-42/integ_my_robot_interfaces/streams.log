@@ -1,0 +1,197 @@
+[0.322s] Invoking command in '/home/t-lemmel/Integ/build/integ_my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/t-lemmel/Integ/src/Integ_my_robot_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/t-lemmel/Integ/install/integ_my_robot_interfaces
+[1.196s] -- The C compiler identification is GNU 11.4.0
+[2.177s] -- The CXX compiler identification is GNU 11.4.0
+[2.278s] -- Detecting C compiler ABI info
+[2.497s] -- Detecting C compiler ABI info - done
+[2.514s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.535s] -- Detecting C compile features
+[2.557s] -- Detecting C compile features - done
+[2.602s] -- Detecting CXX compiler ABI info
+[2.755s] -- Detecting CXX compiler ABI info - done
+[2.765s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.766s] -- Detecting CXX compile features
+[2.766s] -- Detecting CXX compile features - done
+[2.869s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.297s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[3.560s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.900s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.939s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.051s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.321s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.592s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[5.435s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.891s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.402s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.445s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[6.485s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[6.572s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[6.573s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.573s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.573s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[6.618s] -- Found PythonExtra: .so  
+[6.776s] -- Configuring done
+[6.899s] -- Generating done
+[6.903s] -- Build files have been written to: /home/t-lemmel/Integ/build/integ_my_robot_interfaces
+[6.914s] Invoked command in '/home/t-lemmel/Integ/build/integ_my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/t-lemmel/Integ/src/Integ_my_robot_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/t-lemmel/Integ/install/integ_my_robot_interfaces
+[6.916s] Invoking command in '/home/t-lemmel/Integ/build/integ_my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/t-lemmel/Integ/build/integ_my_robot_interfaces -- -j8 -l8
+[6.968s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[7.017s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[7.033s] [  6%] Built target ament_cmake_python_symlink_integ_my_robot_interfaces
+[7.349s] [  9%] [32mBuilding C object CMakeFiles/integ_my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/integ_my_robot_interfaces/msg/detail/center_and_area__functions.c.o[0m
+[7.354s] [  9%] Built target integ_my_robot_interfaces__cpp
+[7.364s] running egg_info
+[7.365s] creating integ_my_robot_interfaces.egg-info
+[7.365s] writing integ_my_robot_interfaces.egg-info/PKG-INFO
+[7.366s] writing dependency_links to integ_my_robot_interfaces.egg-info/dependency_links.txt
+[7.366s] writing top-level names to integ_my_robot_interfaces.egg-info/top_level.txt
+[7.366s] writing manifest file 'integ_my_robot_interfaces.egg-info/SOURCES.txt'
+[7.369s] reading manifest file 'integ_my_robot_interfaces.egg-info/SOURCES.txt'
+[7.369s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.369s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.369s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.369s] writing manifest file 'integ_my_robot_interfaces.egg-info/SOURCES.txt'
+[7.406s] [ 19%] Built target ament_cmake_python_build_integ_my_robot_interfaces_egg
+[7.689s] [ 22%] [32mBuilding CXX object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/integ_my_robot_interfaces/msg/center_and_area__type_support.cpp.o[0m
+[7.700s] [ 25%] [32mBuilding CXX object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/integ_my_robot_interfaces/msg/detail/center_and_area__type_support.cpp.o[0m
+[7.770s] [ 29%] [32mBuilding CXX object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/integ_my_robot_interfaces/msg/detail/dds_fastrtps/center_and_area__type_support.cpp.o[0m
+[8.143s] [ 32%] [32m[1mLinking C shared library libinteg_my_robot_interfaces__rosidl_generator_c.so[0m
+[8.578s] [ 32%] Built target integ_my_robot_interfaces__rosidl_generator_c
+[8.594s] [ 41%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[8.594s] [ 41%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[8.594s] [ 41%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[9.122s] [ 45%] [32mBuilding CXX object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/integ_my_robot_interfaces/msg/center_and_area__type_support.cpp.o[0m
+[9.128s] [ 48%] [32mBuilding C object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/integ_my_robot_interfaces/msg/detail/center_and_area__type_support.c.o[0m
+[9.134s] [ 51%] [32mBuilding CXX object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/integ_my_robot_interfaces/msg/detail/center_and_area__type_support_c.cpp.o[0m
+[9.241s] [ 54%] [32m[1mLinking CXX shared library libinteg_my_robot_interfaces__rosidl_typesupport_c.so[0m
+[9.481s] [ 58%] [32m[1mLinking C shared library libinteg_my_robot_interfaces__rosidl_typesupport_introspection_c.so[0m
+[9.710s] [ 58%] Built target integ_my_robot_interfaces__rosidl_typesupport_introspection_c
+[9.727s] [ 58%] Built target integ_my_robot_interfaces__rosidl_typesupport_c
+[9.766s] [ 61%] [32m[1mLinking CXX shared library libinteg_my_robot_interfaces__rosidl_typesupport_cpp.so[0m
+[9.922s] [ 61%] Built target integ_my_robot_interfaces__rosidl_typesupport_cpp
+[10.053s] [ 64%] [32m[1mLinking CXX shared library libinteg_my_robot_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[10.206s] [ 64%] Built target integ_my_robot_interfaces__rosidl_typesupport_introspection_cpp
+[10.224s] [ 67%] [32m[1mLinking CXX shared library libinteg_my_robot_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[10.238s] [ 70%] [32m[1mLinking CXX shared library libinteg_my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[10.474s] [ 70%] Built target integ_my_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[10.478s] [ 70%] Built target integ_my_robot_interfaces__rosidl_typesupport_fastrtps_c
+[10.505s] [ 70%] Built target integ_my_robot_interfaces
+[10.534s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[10.925s] [ 74%] Built target integ_my_robot_interfaces__py
+[10.953s] [ 77%] [32mBuilding C object CMakeFiles/integ_my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/integ_my_robot_interfaces/msg/_center_and_area_s.c.o[0m
+[11.599s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/integ_my_robot_interfaces/libinteg_my_robot_interfaces__rosidl_generator_py.so[0m
+[11.736s] [ 80%] Built target integ_my_robot_interfaces__rosidl_generator_py
+[11.764s] [ 83%] [32mBuilding C object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/integ_my_robot_interfaces/_integ_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[11.764s] [ 90%] [32mBuilding C object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/integ_my_robot_interfaces/_integ_my_robot_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[11.764s] [ 90%] [32mBuilding C object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/integ_my_robot_interfaces/_integ_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[11.908s] [100%] [32m[1mLinking C shared library rosidl_generator_py/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.908s] [100%] [32m[1mLinking C shared library rosidl_generator_py/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.908s] [100%] [32m[1mLinking C shared library rosidl_generator_py/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.964s] [100%] Built target integ_my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[11.964s] [100%] Built target integ_my_robot_interfaces__rosidl_typesupport_c__pyext
+[11.965s] [100%] Built target integ_my_robot_interfaces__rosidl_typesupport_introspection_c__pyext
+[11.981s] Invoked command in '/home/t-lemmel/Integ/build/integ_my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/t-lemmel/Integ/build/integ_my_robot_interfaces -- -j8 -l8
+[12.068s] Invoking command in '/home/t-lemmel/Integ/build/integ_my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/t-lemmel/Integ/build/integ_my_robot_interfaces
+[12.079s] -- Install configuration: ""
+[12.079s] -- Execute custom install script
+[12.080s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/integ_my_robot_interfaces
+[12.092s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/center_and_area.h
+[12.104s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__functions.h
+[12.116s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__struct.h
+[12.128s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__type_support.h
+[12.140s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/rosidl_generator_c__visibility_control.h
+[12.152s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/library_path.sh
+[12.164s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/library_path.dsv
+[12.176s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__rosidl_typesupport_fastrtps_c.h
+[12.189s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.201s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__rosidl_typesupport_introspection_c.h
+[12.213s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.225s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/center_and_area.hpp
+[12.237s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__builder.hpp
+[12.249s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__struct.hpp
+[12.261s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__traits.hpp
+[12.273s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__rosidl_typesupport_fastrtps_cpp.hpp
+[12.285s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.297s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__rosidl_typesupport_introspection_cpp.hpp
+[12.310s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/pythonpath.sh
+[12.322s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/pythonpath.dsv
+[12.334s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[12.346s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[12.357s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[12.369s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[12.382s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/__init__.py
+[12.394s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/_integ_my_robot_interfaces_s.ep.rosidl_typesupport_c.c
+[12.406s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/_integ_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.418s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/_integ_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[12.429s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.441s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.453s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.465s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/libinteg_my_robot_interfaces__rosidl_generator_py.so
+[12.477s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/msg/__init__.py
+[12.489s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/msg/_center_and_area.py
+[12.500s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/msg/_center_and_area_s.c
+[12.513s] -- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.513s] -- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.513s] -- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.513s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/msg/CenterAndArea.idl
+[12.526s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/msg/CenterAndArea.msg
+[12.538s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/ament_index/resource_index/package_run_dependencies/integ_my_robot_interfaces
+[12.550s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/ament_index/resource_index/parent_prefix_path/integ_my_robot_interfaces
+[12.562s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/ament_prefix_path.sh
+[12.574s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/ament_prefix_path.dsv
+[12.586s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/path.sh
+[12.598s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/path.dsv
+[12.610s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/local_setup.bash
+[12.623s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/local_setup.sh
+[12.635s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/local_setup.zsh
+[12.647s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/local_setup.dsv
+[12.658s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.dsv
+[12.670s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/ament_index/resource_index/packages/integ_my_robot_interfaces
+[12.682s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/rosidl_cmake-extras.cmake
+[12.694s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.706s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.718s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[12.730s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[12.742s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[12.755s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[12.766s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfacesConfig.cmake
+[12.778s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfacesConfig-version.cmake
+[12.790s] -- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.xml
+[12.803s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_generator_c.so
+[12.803s] -- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_generator_c.so" to ""
+[12.803s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_fastrtps_c.so
+[12.804s] -- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[12.804s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_introspection_c.so
+[12.805s] -- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[12.805s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_c.so
+[12.805s] -- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_c.so" to ""
+[12.805s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[12.806s] -- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[12.806s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_introspection_cpp.so
+[12.806s] -- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[12.806s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_cpp.so
+[12.807s] -- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_cpp.so" to ""
+[12.889s] Listing '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces'...
+[12.889s] Compiling '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/__init__.py'...
+[12.889s] Listing '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/msg'...
+[12.889s] Compiling '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/msg/__init__.py'...
+[12.889s] Compiling '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/msg/_center_and_area.py'...
+[12.894s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_generator_py.so
+[12.895s] -- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_generator_py.so" to ""
+[12.895s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_generator_cExport.cmake
+[12.895s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_generator_cExport-noconfig.cmake
+[12.895s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[12.896s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[12.896s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[12.896s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[12.896s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_cExport.cmake
+[12.896s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[12.896s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_generator_cppExport.cmake
+[12.896s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[12.897s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[12.897s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[12.897s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[12.897s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_cppExport.cmake
+[12.897s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[12.898s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_generator_pyExport.cmake
+[12.898s] -- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[12.900s] Invoked command in '/home/t-lemmel/Integ/build/integ_my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/t-lemmel/Integ/build/integ_my_robot_interfaces

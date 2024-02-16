@@ -1,0 +1,267 @@
+[1.333s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--continue-on-error']
+[1.333s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=True, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f73340d6620>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f73340d7610>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f73340d7610>>)
+[1.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.395s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/t-lemmel/Integ'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/Integ_my_robot_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/Integ_my_robot_interfaces) by extension 'ignore'
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/Integ_my_robot_interfaces) by extension 'ignore_ament_install'
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/Integ_my_robot_interfaces) by extensions ['colcon_pkg']
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/Integ_my_robot_interfaces) by extension 'colcon_pkg'
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/Integ_my_robot_interfaces) by extensions ['colcon_meta']
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/Integ_my_robot_interfaces) by extension 'colcon_meta'
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/Integ_my_robot_interfaces) by extensions ['ros']
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/Integ_my_robot_interfaces) by extension 'ros'
+[1.415s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Integ_my_robot_interfaces' with type 'ros.ament_cmake' and name 'integ_my_robot_interfaces'
+[1.415s] Level 1:colcon.colcon_core.package_identification:_identify(src/integ_description) by extensions ['ignore', 'ignore_ament_install']
+[1.416s] Level 1:colcon.colcon_core.package_identification:_identify(src/integ_description) by extension 'ignore'
+[1.416s] Level 1:colcon.colcon_core.package_identification:_identify(src/integ_description) by extension 'ignore_ament_install'
+[1.416s] Level 1:colcon.colcon_core.package_identification:_identify(src/integ_description) by extensions ['colcon_pkg']
+[1.416s] Level 1:colcon.colcon_core.package_identification:_identify(src/integ_description) by extension 'colcon_pkg'
+[1.416s] Level 1:colcon.colcon_core.package_identification:_identify(src/integ_description) by extensions ['colcon_meta']
+[1.416s] Level 1:colcon.colcon_core.package_identification:_identify(src/integ_description) by extension 'colcon_meta'
+[1.416s] Level 1:colcon.colcon_core.package_identification:_identify(src/integ_description) by extensions ['ros']
+[1.416s] Level 1:colcon.colcon_core.package_identification:_identify(src/integ_description) by extension 'ros'
+[1.416s] DEBUG:colcon.colcon_core.package_identification:Package 'src/integ_description' with type 'ros.ament_cmake' and name 'integ_description'
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_servoing) by extensions ['ignore', 'ignore_ament_install']
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_servoing) by extension 'ignore'
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_servoing) by extension 'ignore_ament_install'
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_servoing) by extensions ['colcon_pkg']
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_servoing) by extension 'colcon_pkg'
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_servoing) by extensions ['colcon_meta']
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_servoing) by extension 'colcon_meta'
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_servoing) by extensions ['ros']
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(src/visual_servoing) by extension 'ros'
+[1.418s] DEBUG:colcon.colcon_core.package_identification:Package 'src/visual_servoing' with type 'ros.ament_python' and name 'visual_servoing'
+[1.418s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.418s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.418s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.418s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.418s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.538s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.539s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.579s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/t-lemmel/Ros_Labs/install
+[1.599s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/t-lemmel/Aquabot_Tom/install
+[1.618s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/t-lemmel/vrx_ws/install
+[1.638s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 236 installed packages in /opt/ros/humble
+[1.640s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.745s] Level 5:colcon.colcon_core.verb:set package 'integ_description' build argument 'cmake_args' from command line to 'None'
+[1.745s] Level 5:colcon.colcon_core.verb:set package 'integ_description' build argument 'cmake_target' from command line to 'None'
+[1.745s] Level 5:colcon.colcon_core.verb:set package 'integ_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.745s] Level 5:colcon.colcon_core.verb:set package 'integ_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.745s] Level 5:colcon.colcon_core.verb:set package 'integ_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.745s] Level 5:colcon.colcon_core.verb:set package 'integ_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.745s] Level 5:colcon.colcon_core.verb:set package 'integ_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.745s] Level 5:colcon.colcon_core.verb:set package 'integ_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.745s] Level 5:colcon.colcon_core.verb:set package 'integ_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.745s] DEBUG:colcon.colcon_core.verb:Building package 'integ_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/t-lemmel/Integ/build/integ_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/t-lemmel/Integ/install/integ_description', 'merge_install': False, 'path': '/home/t-lemmel/Integ/src/integ_description', 'symlink_install': True, 'test_result_base': None}
+[1.765s] Level 5:colcon.colcon_core.verb:set package 'integ_my_robot_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.765s] Level 5:colcon.colcon_core.verb:set package 'integ_my_robot_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.765s] Level 5:colcon.colcon_core.verb:set package 'integ_my_robot_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.765s] Level 5:colcon.colcon_core.verb:set package 'integ_my_robot_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.765s] Level 5:colcon.colcon_core.verb:set package 'integ_my_robot_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.765s] Level 5:colcon.colcon_core.verb:set package 'integ_my_robot_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.765s] Level 5:colcon.colcon_core.verb:set package 'integ_my_robot_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.765s] Level 5:colcon.colcon_core.verb:set package 'integ_my_robot_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.765s] Level 5:colcon.colcon_core.verb:set package 'integ_my_robot_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.765s] DEBUG:colcon.colcon_core.verb:Building package 'integ_my_robot_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/t-lemmel/Integ/build/integ_my_robot_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/t-lemmel/Integ/install/integ_my_robot_interfaces', 'merge_install': False, 'path': '/home/t-lemmel/Integ/src/Integ_my_robot_interfaces', 'symlink_install': True, 'test_result_base': None}
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'visual_servoing' build argument 'cmake_args' from command line to 'None'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'visual_servoing' build argument 'cmake_target' from command line to 'None'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'visual_servoing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.785s] Level 5:colcon.colcon_core.verb:set package 'visual_servoing' build argument 'cmake_clean_cache' from command line to 'False'
+[1.785s] Level 5:colcon.colcon_core.verb:set package 'visual_servoing' build argument 'cmake_clean_first' from command line to 'False'
+[1.785s] Level 5:colcon.colcon_core.verb:set package 'visual_servoing' build argument 'cmake_force_configure' from command line to 'False'
+[1.785s] Level 5:colcon.colcon_core.verb:set package 'visual_servoing' build argument 'ament_cmake_args' from command line to 'None'
+[1.785s] Level 5:colcon.colcon_core.verb:set package 'visual_servoing' build argument 'catkin_cmake_args' from command line to 'None'
+[1.785s] Level 5:colcon.colcon_core.verb:set package 'visual_servoing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.785s] DEBUG:colcon.colcon_core.verb:Building package 'visual_servoing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/t-lemmel/Integ/build/visual_servoing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/t-lemmel/Integ/install/visual_servoing', 'merge_install': False, 'path': '/home/t-lemmel/Integ/src/visual_servoing', 'symlink_install': True, 'test_result_base': None}
+[1.804s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.824s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.824s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/t-lemmel/Integ/src/integ_description' with build type 'ament_cmake'
+[1.824s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/t-lemmel/Integ/src/integ_description'
+[1.846s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.846s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.846s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.949s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/t-lemmel/Integ/src/Integ_my_robot_interfaces' with build type 'ament_cmake'
+[1.949s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/t-lemmel/Integ/src/Integ_my_robot_interfaces'
+[1.970s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.970s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.074s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/t-lemmel/Integ/src/visual_servoing' with build type 'ament_python'
+[2.074s] Level 1:colcon.colcon_core.shell:create_environment_hook('visual_servoing', 'ament_prefix_path')
+[2.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/visual_servoing/share/visual_servoing/hook/ament_prefix_path.ps1'
+[2.095s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/t-lemmel/Integ/install/visual_servoing/share/visual_servoing/hook/ament_prefix_path.dsv'
+[2.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/visual_servoing/share/visual_servoing/hook/ament_prefix_path.sh'
+[2.116s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.116s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/t-lemmel/Integ/build/integ_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/t-lemmel/Integ/build/integ_description -- -j8 -l8
+[2.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/t-lemmel/Integ/build/integ_my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/t-lemmel/Integ/build/integ_my_robot_interfaces -- -j8 -l8
+[2.577s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/t-lemmel/Integ/src/visual_servoing'
+[2.607s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.608s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.714s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/t-lemmel/Integ/build/integ_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/t-lemmel/Integ/build/integ_description -- -j8 -l8
+[2.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/t-lemmel/Integ/build/integ_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/t-lemmel/Integ/build/integ_description
+[2.794s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(integ_description)
+[2.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/t-lemmel/Integ/build/integ_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/t-lemmel/Integ/build/integ_description
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_description' for CMake module files
+[2.818s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_description' for CMake config files
+[2.819s] Level 1:colcon.colcon_core.shell:create_environment_hook('integ_description', 'cmake_prefix_path')
+[2.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/integ_description/share/integ_description/hook/cmake_prefix_path.ps1'
+[2.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/t-lemmel/Integ/install/integ_description/share/integ_description/hook/cmake_prefix_path.dsv'
+[2.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/integ_description/share/integ_description/hook/cmake_prefix_path.sh'
+[2.841s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_description/bin'
+[2.841s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_description/lib/pkgconfig/integ_description.pc'
+[2.841s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_description/lib/python3.10/site-packages'
+[2.842s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_description/bin'
+[2.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_description/share/integ_description/package.ps1'
+[2.864s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/t-lemmel/Integ/install/integ_description/share/integ_description/package.dsv'
+[2.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_description/share/integ_description/package.sh'
+[2.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_description/share/integ_description/package.bash'
+[2.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_description/share/integ_description/package.zsh'
+[2.868s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/t-lemmel/Integ/install/integ_description/share/colcon-core/packages/integ_description)
+[2.922s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(integ_description)
+[2.943s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_description' for CMake module files
+[2.943s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_description' for CMake config files
+[2.944s] Level 1:colcon.colcon_core.shell:create_environment_hook('integ_description', 'cmake_prefix_path')
+[2.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/integ_description/share/integ_description/hook/cmake_prefix_path.ps1'
+[2.965s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/t-lemmel/Integ/install/integ_description/share/integ_description/hook/cmake_prefix_path.dsv'
+[2.965s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/integ_description/share/integ_description/hook/cmake_prefix_path.sh'
+[2.966s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_description/bin'
+[2.966s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_description/lib/pkgconfig/integ_description.pc'
+[2.966s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_description/lib/python3.10/site-packages'
+[2.967s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_description/bin'
+[2.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_description/share/integ_description/package.ps1'
+[2.988s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/t-lemmel/Integ/install/integ_description/share/integ_description/package.dsv'
+[2.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_description/share/integ_description/package.sh'
+[2.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_description/share/integ_description/package.bash'
+[2.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_description/share/integ_description/package.zsh'
+[2.990s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/t-lemmel/Integ/install/integ_description/share/colcon-core/packages/integ_description)
+[3.155s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/t-lemmel/Integ/build/integ_my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/t-lemmel/Integ/build/integ_my_robot_interfaces -- -j8 -l8
+[3.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/t-lemmel/Integ/build/visual_servoing': PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/t-lemmel/Integ/build/visual_servoing/prefix_override:/home/t-lemmel/Integ/install/visual_servoing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/t-lemmel/Integ/build/visual_servoing/build --no-deps install_data
+[3.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/t-lemmel/Integ/build/integ_my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/t-lemmel/Integ/build/integ_my_robot_interfaces
+[3.345s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(integ_my_robot_interfaces)
+[3.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/t-lemmel/Integ/build/integ_my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/t-lemmel/Integ/build/integ_my_robot_interfaces
+[3.366s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces' for CMake module files
+[3.367s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces' for CMake config files
+[3.368s] Level 1:colcon.colcon_core.shell:create_environment_hook('integ_my_robot_interfaces', 'cmake_prefix_path')
+[3.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/hook/cmake_prefix_path.ps1'
+[3.388s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/hook/cmake_prefix_path.dsv'
+[3.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/hook/cmake_prefix_path.sh'
+[3.389s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib'
+[3.389s] Level 1:colcon.colcon_core.shell:create_environment_hook('integ_my_robot_interfaces', 'ld_library_path_lib')
+[3.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/hook/ld_library_path_lib.ps1'
+[3.413s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/hook/ld_library_path_lib.dsv'
+[3.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/hook/ld_library_path_lib.sh'
+[3.414s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/bin'
+[3.414s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/pkgconfig/integ_my_robot_interfaces.pc'
+[3.414s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/python3.10/site-packages'
+[3.414s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/bin'
+[3.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.ps1'
+[3.435s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.dsv'
+[3.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.sh'
+[3.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.bash'
+[3.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.zsh'
+[3.437s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/colcon-core/packages/integ_my_robot_interfaces)
+[3.546s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(integ_my_robot_interfaces)
+[3.568s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces' for CMake module files
+[3.569s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces' for CMake config files
+[3.570s] Level 1:colcon.colcon_core.shell:create_environment_hook('integ_my_robot_interfaces', 'cmake_prefix_path')
+[3.590s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/hook/cmake_prefix_path.ps1'
+[3.590s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/hook/cmake_prefix_path.dsv'
+[3.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/hook/cmake_prefix_path.sh'
+[3.591s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib'
+[3.591s] Level 1:colcon.colcon_core.shell:create_environment_hook('integ_my_robot_interfaces', 'ld_library_path_lib')
+[3.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/hook/ld_library_path_lib.ps1'
+[3.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/hook/ld_library_path_lib.dsv'
+[3.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/hook/ld_library_path_lib.sh'
+[3.613s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/bin'
+[3.613s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/pkgconfig/integ_my_robot_interfaces.pc'
+[3.613s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/python3.10/site-packages'
+[3.613s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/bin'
+[3.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.ps1'
+[3.636s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.dsv'
+[3.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.sh'
+[3.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.bash'
+[3.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.zsh'
+[3.638s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/colcon-core/packages/integ_my_robot_interfaces)
+[3.818s] Level 1:colcon.colcon_core.shell:create_environment_hook('visual_servoing', 'pythonpath_develop')
+[3.819s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/t-lemmel/Integ/build/visual_servoing' returned '0': PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/t-lemmel/Integ/build/visual_servoing/prefix_override:/home/t-lemmel/Integ/install/visual_servoing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/t-lemmel/Integ/build/visual_servoing/build --no-deps install_data
+[3.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/build/visual_servoing/share/visual_servoing/hook/pythonpath_develop.ps1'
+[3.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/t-lemmel/Integ/build/visual_servoing/share/visual_servoing/hook/pythonpath_develop.dsv'
+[3.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/build/visual_servoing/share/visual_servoing/hook/pythonpath_develop.sh'
+[3.860s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/visual_servoing' for CMake module files
+[3.861s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/visual_servoing' for CMake config files
+[3.861s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/visual_servoing/lib'
+[3.862s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/visual_servoing/bin'
+[3.862s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/visual_servoing/lib/pkgconfig/visual_servoing.pc'
+[3.862s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/visual_servoing/lib/python3.10/site-packages'
+[3.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('visual_servoing', 'pythonpath')
+[3.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/visual_servoing/share/visual_servoing/hook/pythonpath.ps1'
+[3.884s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/t-lemmel/Integ/install/visual_servoing/share/visual_servoing/hook/pythonpath.dsv'
+[3.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/t-lemmel/Integ/install/visual_servoing/share/visual_servoing/hook/pythonpath.sh'
+[3.885s] Level 1:colcon.colcon_core.environment:checking '/home/t-lemmel/Integ/install/visual_servoing/bin'
+[3.885s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(visual_servoing)
+[3.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/visual_servoing/share/visual_servoing/package.ps1'
+[3.906s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/t-lemmel/Integ/install/visual_servoing/share/visual_servoing/package.dsv'
+[3.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/visual_servoing/share/visual_servoing/package.sh'
+[3.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/visual_servoing/share/visual_servoing/package.bash'
+[3.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/t-lemmel/Integ/install/visual_servoing/share/visual_servoing/package.zsh'
+[3.907s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/t-lemmel/Integ/install/visual_servoing/share/colcon-core/packages/visual_servoing)
+[3.908s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.908s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.908s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.908s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.938s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.938s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.938s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.952s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.973s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/t-lemmel/Integ/install/local_setup.ps1'
+[3.975s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/t-lemmel/Integ/install/_local_setup_util_ps1.py'
+[3.976s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/t-lemmel/Integ/install/setup.ps1'
+[3.998s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/t-lemmel/Integ/install/local_setup.sh'
+[3.999s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/t-lemmel/Integ/install/_local_setup_util_sh.py'
+[3.999s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/t-lemmel/Integ/install/setup.sh'
+[4.021s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/t-lemmel/Integ/install/local_setup.bash'
+[4.021s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/t-lemmel/Integ/install/setup.bash'
+[4.043s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/t-lemmel/Integ/install/local_setup.zsh'
+[4.043s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/t-lemmel/Integ/install/setup.zsh'

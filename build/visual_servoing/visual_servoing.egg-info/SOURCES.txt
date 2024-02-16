@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/visual_servoing
+visual_servoing/__init__.py
+visual_servoing/tracker.py
+visual_servoing.egg-info/PKG-INFO
+visual_servoing.egg-info/SOURCES.txt
+visual_servoing.egg-info/dependency_links.txt
+visual_servoing.egg-info/entry_points.txt
+visual_servoing.egg-info/requires.txt
+visual_servoing.egg-info/top_level.txt
+visual_servoing.egg-info/zip-safe
