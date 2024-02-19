@@ -21,6 +21,9 @@ class Tracker(Node):
         # publisher of the joint2 position command
         self.joint2_publisher_ = self.create_publisher(Float64, '/scara/joint_2_cmd_pos', 10)
 
+        self.latest_joint1_command = Float64()
+        self.latest_joint2_command = Float64()
+
     def joint_states_callback(self, msg):
         self.q1 = msg.position[1]
         self.q2 = msg.position[2]
@@ -30,10 +33,35 @@ class Tracker(Node):
         joint1_command = Float64()
         joint2_command = Float64()
 
-        l1 = 0.28002 # the length of the first link
-        l2 = 0.28002 # the length of the second link
+        if msg.detected == True : # if a feature is detected
 
-        #implement the control law here
+            error_x = abs(320 - msg.center.x) # 320 is the center of the image
+            error_y = abs(200 - msg.center.y) # 200 is the center of the image
+
+            error_vector_pixel = [error_x, error_y] # the error vector in pixels
+
+            vertical_fov = 2.094 # the vertical field of view of the camera in radians
+            horizontal_fov = 2.094 # the horizontal field of view of the camera in radians
+
+            distance_to_target = 0.11 # the distance from the camera to the target in meters
+
+            image_width_meters = 2*distance_to_target*math.tan(horizontal_fov/2)
+            image_height_meters = 2*distance_to_target*math.tan(vertical_fov/2)
+
+            error_vector_meters = [error_x/640*image_width_meters,error_y/400*image_height_meters] # convert the error vector from pixels to meters
+            l1 = 0.28002 # the length of the first link
+            l2 = 0.28002 # the length of the second link
+
+        try :
+            # implement the command law here
+        except Exception as e:
+            self.get_logger().error(f'calculating command: {e}')
+            return
+
+        else: #if no feature is detected publish the latest joint commands again
+            self.joint1_publisher_.publish(self.latest_joint1_command)
+            self.joint2_publisher_.publish(self.latest_joint2_command)
+            self.get_logger().info('No feature detected')
 
 
 def main(args=None):

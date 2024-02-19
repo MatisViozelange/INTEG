@@ -48,8 +48,8 @@ class Tracker(Node):
             image_width_meters = 2*distance_to_target*math.tan(horizontal_fov/2)
             image_height_meters = 2*distance_to_target*math.tan(vertical_fov/2)
 
-            error_vector = [-error_y/400*image_height_meters,-error_x/640*image_width_meters] # convert the error vector from pixels to meters
-
+            error_vector = [-error_y/400*image_height_meters,-error_x/640*image_width_meters] # convert the error vector from pixels to meters and takes into account the orientation of the camera relative to the end effector
+            
             desired_position = [-1 * component for component in error_vector]
 
             l1 = 0.28002 # the length of the first link
@@ -72,11 +72,10 @@ class Tracker(Node):
                 self.latest_joint1_command = joint1_command
                 self.latest_joint2_command = joint2_command
 
-                #convert the joint differences angles between q1 and theta 1 to degrees and print them
+            #convert the joint differences angles between q1 and theta 1 to degrees and print them DEBUGGING
                 joint1_diff = (theta1 - self.q1) * 180 / math.pi
                 joint2_diff = (theta2 - self.q2) * 180 / math.pi
                 self.get_logger().info(f'joint1 diff: {joint1_diff}, joint2 diff: {joint2_diff}')
-
 
                 self.joint1_publisher_.publish(joint1_command)
                 self.joint2_publisher_.publish(joint2_command)
