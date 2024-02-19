@@ -17,9 +17,9 @@ class Tracker(Node):
         self.feature_subscriber = self.create_subscription(CenterAndArea, 'center_and_area_detected', self.listener_callback, 10)
         
         # publisher of the joint1 position command
-        self.joint1_publisher_ = self.create_publisher(Float64, '/scara/joint_1_cmd_pos', 10)
+        self.joint1_publisher_ = self.create_publisher(Float64, '/scara/joint_1_cmd_vel', 10)
         # publisher of the joint2 position command
-        self.joint2_publisher_ = self.create_publisher(Float64, '/scara/joint_2_cmd_pos', 10)
+        self.joint2_publisher_ = self.create_publisher(Float64, '/scara/joint_2_cmd_vel', 10)
 
         self.latest_joint1_command = Float64()
         self.latest_joint2_command = Float64()
@@ -35,28 +35,55 @@ class Tracker(Node):
 
         if msg.detected == True : # if a feature is detected
 
-            error_x = abs(320 - msg.center.x) # 320 is the center of the image
-            error_y = abs(200 - msg.center.y) # 200 is the center of the image
+            try : # implement the command law here
 
-            error_vector_pixel = [error_x, error_y] # the error vector in pixels
+                error_x = abs(320 - msg.center.x) # 320 is the center of the image
+                error_y = abs(200 - msg.center.y) # 200 is the center of the image
 
-            vertical_fov = 2.094 # the vertical field of view of the camera in radians
-            horizontal_fov = 2.094 # the horizontal field of view of the camera in radians
+                vertical_fov = 2.094 # the vertical field of view of the camera in radians
+                horizontal_fov = 2.094 # the horizontal field of view of the camera in radians
 
-            distance_to_target = 0.11 # the distance from the camera to the target in meters
+                distance_to_target = 0.11 # the distance from the camera to the target in meters
 
-            image_width_meters = 2*distance_to_target*math.tan(horizontal_fov/2)
-            image_height_meters = 2*distance_to_target*math.tan(vertical_fov/2)
+                image_width_meters = 2*distance_to_target*math.tan(horizontal_fov/2)
+                image_height_meters = 2*distance_to_target*math.tan(vertical_fov/2)
 
-            error_vector_meters = [error_x/640*image_width_meters,error_y/400*image_height_meters] # convert the error vector from pixels to meters
-            l1 = 0.28002 # the length of the first link
-            l2 = 0.28002 # the length of the second link
+                alpha_x = 640/image_width_meters # the conversion factor from pixels to meters in the x direction
+                alpha_y = 400/image_height_meters # the conversion factor from pixels to meters in the y direction
 
-        try :
-            # implement the command law here
-        except Exception as e:
-            self.get_logger().error(f'calculating command: {e}')
-            return
+                l1 = 0.28002 # the length of the first link
+                l2 = 0.28002 # the length of the second link
+
+                # rotation matrix of -pi/2 around x and z
+                W = np.array([[0, -1, 0], [-1, 0, 0], [0, 0, -1]])
+
+                J = np.array([[-l1*np.sin(self.q1)-l2*np.sin(self.q1+self.q2), -l2*np.sin(self.q1+self.q2),0],
+                            [l1*np.cos(self.q1)+l2*np.cos(self.q1+self.q2), l2*np.cos(self.q1+self.q2),0],
+                            [0, 0, 1]])  
+                
+                Pixel2MeterMatrix = np.array([[alpha_x, 0], [0, alpha_y]])
+
+                L2d = np.array([[-1/distance_to_target,0 , pow(error_x/(alpha_x),2)/distance_to_target], [0, -1/distance_to_target , pow(error_y/(alpha_y),2)/distance_to_target]])
+                
+                #multiply Pixel2MeterMatrix and L2d and W and J
+                Js = np.dot(np.dot(Pixel2MeterMatrix, L2d), np.dot(W, J))
+                Js_pseudo_inv = np.linalg.pinv(Js)    
+
+                coef = 0.1
+                q_dot = np.dot(Js_pseudo_inv, [-coef*error_x, -coef*error_y])
+
+                joint1_command.data = q_dot[0]
+                joint2_command.data = q_dot[1]
+
+                self.joint1_publisher_.publish(joint1_command)
+                self.joint2_publisher_.publish(joint2_command)
+
+                self.latest_joint1_command = joint1_command
+                self.latest_joint2_command = joint2_command
+
+            except Exception as e:
+                self.get_logger().error(f'calculating command: {e}')
+                return
 
         else: #if no feature is detected publish the latest joint commands again
             self.joint1_publisher_.publish(self.latest_joint1_command)

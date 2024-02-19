@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing visual_servoing.egg-info/PKG-INFO
+writing dependency_links to visual_servoing.egg-info/dependency_links.txt
+writing entry points to visual_servoing.egg-info/entry_points.txt
+writing requirements to visual_servoing.egg-info/requires.txt
+writing top-level names to visual_servoing.egg-info/top_level.txt
+reading manifest file 'visual_servoing.egg-info/SOURCES.txt'
+writing manifest file 'visual_servoing.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/t-lemmel/Integ/install/visual_servoing/lib/python3.10/site-packages/visual-servoing.egg-link (link to .)
+Installing FeatureDetector script to /home/t-lemmel/Integ/install/visual_servoing/lib/visual_servoing
+Installing tracker script to /home/t-lemmel/Integ/install/visual_servoing/lib/visual_servoing
+Installing tracker2 script to /home/t-lemmel/Integ/install/visual_servoing/lib/visual_servoing
+
+Installed /home/t-lemmel/Integ/build/visual_servoing
+running install_data
