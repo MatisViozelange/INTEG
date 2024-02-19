@@ -1,0 +1,58 @@
+[0.543s] Invoking command in '/home/t-lemmel/Integ/build/integ_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/t-lemmel/Integ/command/src/integ_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/t-lemmel/Integ/install/integ_description
+[3.491s] -- The C compiler identification is GNU 11.4.0
+[4.584s] -- The CXX compiler identification is GNU 11.4.0
+[4.777s] -- Detecting C compiler ABI info
+[5.157s] -- Detecting C compiler ABI info - done
+[5.166s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.167s] -- Detecting C compile features
+[5.187s] -- Detecting C compile features - done
+[5.233s] -- Detecting CXX compiler ABI info
+[5.492s] -- Detecting CXX compiler ABI info - done
+[5.502s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.502s] -- Detecting CXX compile features
+[5.503s] -- Detecting CXX compile features - done
+[5.622s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.996s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[6.226s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[6.656s] -- Configuring done
+[6.665s] -- Generating done
+[6.668s] -- Build files have been written to: /home/t-lemmel/Integ/build/integ_description
+[6.680s] Invoked command in '/home/t-lemmel/Integ/build/integ_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/t-lemmel/Integ/command/src/integ_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/t-lemmel/Integ/install/integ_description
+[6.684s] Invoking command in '/home/t-lemmel/Integ/build/integ_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/t-lemmel/Integ/build/integ_description -- -j8 -l8
+[6.758s] Invoked command in '/home/t-lemmel/Integ/build/integ_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/t-lemmel/Integ/build/integ_description -- -j8 -l8
+[6.809s] Invoking command in '/home/t-lemmel/Integ/build/integ_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/t-lemmel/Integ/build/integ_description
+[6.822s] -- Install configuration: ""
+[6.822s] -- Execute custom install script
+[6.835s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/config/joint_names_scara_sw.yaml
+[6.847s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/config.rviz
+[6.858s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/effort_manual.yaml
+[6.870s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/position_manual.yaml
+[6.882s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/state_publisher_launch.py
+[6.893s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/target_launch.py
+[6.905s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/upload_launch.py
+[6.917s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/velocity_manual.yaml
+[6.928s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/world_launch.py
+[6.940s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/meshes/base_link.STL
+[6.952s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/meshes/link_1.STL
+[6.964s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/meshes/link_2.STL
+[6.996s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/urdf/camera.xacro
+[7.007s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/urdf/scara_sw.xacro
+[7.019s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/urdf/scara_sw_identification.urdf
+[7.030s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/urdf/target.xacro
+[7.042s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/urdf/world.sdf
+[7.053s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/ament_index/resource_index/package_run_dependencies/integ_description
+[7.065s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/ament_index/resource_index/parent_prefix_path/integ_description
+[7.077s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/environment/ament_prefix_path.sh
+[7.089s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/environment/ament_prefix_path.dsv
+[7.101s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/environment/path.sh
+[7.112s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/environment/path.dsv
+[7.124s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/local_setup.bash
+[7.136s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/local_setup.sh
+[7.147s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/local_setup.zsh
+[7.159s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/local_setup.dsv
+[7.171s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/package.dsv
+[7.183s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/ament_index/resource_index/packages/integ_description
+[7.195s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/cmake/integ_descriptionConfig.cmake
+[7.206s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/cmake/integ_descriptionConfig-version.cmake
+[7.218s] -- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/package.xml
+[7.232s] Invoked command in '/home/t-lemmel/Integ/build/integ_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1_ori=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/t-lemmel/Integ/build/integ_description

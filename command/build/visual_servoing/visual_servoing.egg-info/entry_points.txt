@@ -1,3 +1,0 @@
-[console_scripts]
-tracker = visual_servoing.tracker:main
-

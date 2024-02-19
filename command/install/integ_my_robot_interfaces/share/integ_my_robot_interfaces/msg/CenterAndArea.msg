@@ -1,1 +1,0 @@
-/home/t-lemmel/Integ/src/Integ_my_robot_interfaces/msg/CenterAndArea.msg

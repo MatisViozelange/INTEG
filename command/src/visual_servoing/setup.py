@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'FeatureDetector = visual_servoing.FeatureDetector:main',
             'tracker = visual_servoing.tracker:main',
+            'tracker2 = visual_servoing.tracker2:main',
         ],
     },
 )

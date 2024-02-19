@@ -1,0 +1,6 @@
+{
+  "package_name": "integ_my_robot_interfaces",
+  "non_idl_tuples": [
+    "/home/t-lemmel/Integ/command/src/Integ_my_robot_interfaces:msg/CenterAndArea.msg"
+  ]
+}

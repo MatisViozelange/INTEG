@@ -1,0 +1,563 @@
+[0.000000] (-) TimerEvent: {}
+[0.001179] (integ_description) JobQueued: {'identifier': 'integ_description', 'dependencies': OrderedDict()}
+[0.002532] (integ_my_robot_interfaces) JobQueued: {'identifier': 'integ_my_robot_interfaces', 'dependencies': OrderedDict()}
+[0.004424] (visual_servoing) JobQueued: {'identifier': 'visual_servoing', 'dependencies': OrderedDict()}
+[0.005448] (integ_description) JobStarted: {'identifier': 'integ_description'}
+[0.098291] (-) TimerEvent: {}
+[0.199796] (-) TimerEvent: {}
+[0.300380] (-) TimerEvent: {}
+[0.401005] (-) TimerEvent: {}
+[0.501661] (-) TimerEvent: {}
+[0.548979] (integ_my_robot_interfaces) JobStarted: {'identifier': 'integ_my_robot_interfaces'}
+[0.602099] (-) TimerEvent: {}
+[0.704466] (-) TimerEvent: {}
+[0.806425] (-) TimerEvent: {}
+[0.910231] (-) TimerEvent: {}
+[1.012529] (-) TimerEvent: {}
+[1.116088] (-) TimerEvent: {}
+[1.186522] (visual_servoing) JobStarted: {'identifier': 'visual_servoing'}
+[1.216677] (-) TimerEvent: {}
+[1.319250] (-) TimerEvent: {}
+[1.421264] (-) TimerEvent: {}
+[1.522071] (-) TimerEvent: {}
+[1.624102] (-) TimerEvent: {}
+[1.725032] (-) TimerEvent: {}
+[1.826371] (-) TimerEvent: {}
+[1.894968] (integ_description) JobProgress: {'identifier': 'integ_description', 'progress': 'cmake'}
+[1.900833] (integ_description) JobProgress: {'identifier': 'integ_description', 'progress': 'build'}
+[1.902236] (integ_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/t-lemmel/Integ/build/integ_description', '--', '-j8', '-l8'], 'cwd': '/home/t-lemmel/Integ/build/integ_description', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/home/t-lemmel/vrx_ws/install/lib'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', '/home/t-lemmel/vrx_ws/install/share/wamv_description/models:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/models/tmp:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/models:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/worlds:/home/t-lemmel/vrx_ws/install/share/vrx_gz/models/tmp:/home/t-lemmel/vrx_ws/install/share/vrx_gz/models:/home/t-lemmel/vrx_ws/install/share/vrx_gz/worlds/2023_practice:/home/t-lemmel/vrx_ws/install/share/vrx_gz/worlds:/home/t-lemmel/vrx_ws/install/share/aquabot_description/models:/home/t-lemmel/vrx_ws/install/share/vrx_gazebo/models:/home/t-lemmel/vrx_ws/install/share/'), ('USER', 't-lemmel'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces/lib:/home/t-lemmel/vrx_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/opt/ros/noetic/lib'), ('ros1_workspaces', ''), ('PS1_ori', '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('HOME', '/home/t-lemmel'), ('ros2_workspaces', '/opt/ros/humble /home/t-lemmel/vrx_ws /home/t-lemmel/Aquabot_Tom /home/t-lemmel/Ros_Labs /home/t-lemmel/Integ'), ('OLDPWD', '/home/t-lemmel/Integ/command/'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '3549'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/t-lemmel/Ros_Labs/install:/home/t-lemmel/Aquabot_Tom/install:/home/t-lemmel/vrx_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 't-lemmel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 't-lemmel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tlemmel-Predator-PH317-51:@/tmp/.ICE-unix/2008,unix/tlemmel-Predator-PH317-51:/tmp/.ICE-unix/2008'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8f5af9fc_d6c8_4895_bc7d_b8e48651e458'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/t-lemmel/Aquabot_Tom/install/test_float:/home/t-lemmel/Aquabot_Tom/install/package_thruster_activation:/home/t-lemmel/Aquabot_Tom/install/mapping:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces:/home/t-lemmel/Aquabot_Tom/install/move_ekf:/home/t-lemmel/Aquabot_Tom/install/astar_path_planner:/home/t-lemmel/Aquabot_Tom/install/aquabot_ekf:/home/t-lemmel/Aquabot_Tom/install/aquabot_common:/home/t-lemmel/vrx_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/t-lemmel/Integ/build/integ_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/t-lemmel/Integ/build/visual_servoing:/home/t-lemmel/Integ/install/visual_servoing/lib/python3.10/site-packages:/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/t-lemmel/Aquabot_Tom/install/move_ekf/local/lib/python3.10/dist-packages:/home/t-lemmel/vrx_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/t-lemmel/Integ/install/integ_my_robot_interfaces:/home/t-lemmel/Integ/install/integ_description:/home/t-lemmel/Aquabot_Tom/install/test_float:/home/t-lemmel/Aquabot_Tom/install/package_thruster_activation:/home/t-lemmel/Aquabot_Tom/install/mapping:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces:/home/t-lemmel/Aquabot_Tom/install/move_ekf:/home/t-lemmel/Aquabot_Tom/install/astar_path_planner:/home/t-lemmel/Aquabot_Tom/install/aquabot_ekf:/home/t-lemmel/Aquabot_Tom/install/aquabot_common:/home/t-lemmel/vrx_ws/install:/opt/ros/humble')]), 'shell': False}
+[1.918105] (integ_my_robot_interfaces) JobProgress: {'identifier': 'integ_my_robot_interfaces', 'progress': 'cmake'}
+[1.919301] (integ_my_robot_interfaces) JobProgress: {'identifier': 'integ_my_robot_interfaces', 'progress': 'build'}
+[1.919978] (integ_my_robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/t-lemmel/Integ/build/integ_my_robot_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/t-lemmel/Integ/build/integ_my_robot_interfaces', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/home/t-lemmel/vrx_ws/install/lib'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', '/home/t-lemmel/vrx_ws/install/share/wamv_description/models:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/models/tmp:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/models:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/worlds:/home/t-lemmel/vrx_ws/install/share/vrx_gz/models/tmp:/home/t-lemmel/vrx_ws/install/share/vrx_gz/models:/home/t-lemmel/vrx_ws/install/share/vrx_gz/worlds/2023_practice:/home/t-lemmel/vrx_ws/install/share/vrx_gz/worlds:/home/t-lemmel/vrx_ws/install/share/aquabot_description/models:/home/t-lemmel/vrx_ws/install/share/vrx_gazebo/models:/home/t-lemmel/vrx_ws/install/share/'), ('USER', 't-lemmel'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces/lib:/home/t-lemmel/vrx_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/opt/ros/noetic/lib'), ('ros1_workspaces', ''), ('PS1_ori', '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('HOME', '/home/t-lemmel'), ('ros2_workspaces', '/opt/ros/humble /home/t-lemmel/vrx_ws /home/t-lemmel/Aquabot_Tom /home/t-lemmel/Ros_Labs /home/t-lemmel/Integ'), ('OLDPWD', '/home/t-lemmel/Integ/command/'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '3549'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/t-lemmel/Ros_Labs/install:/home/t-lemmel/Aquabot_Tom/install:/home/t-lemmel/vrx_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 't-lemmel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 't-lemmel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tlemmel-Predator-PH317-51:@/tmp/.ICE-unix/2008,unix/tlemmel-Predator-PH317-51:/tmp/.ICE-unix/2008'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8f5af9fc_d6c8_4895_bc7d_b8e48651e458'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/t-lemmel/Aquabot_Tom/install/test_float:/home/t-lemmel/Aquabot_Tom/install/package_thruster_activation:/home/t-lemmel/Aquabot_Tom/install/mapping:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces:/home/t-lemmel/Aquabot_Tom/install/move_ekf:/home/t-lemmel/Aquabot_Tom/install/astar_path_planner:/home/t-lemmel/Aquabot_Tom/install/aquabot_ekf:/home/t-lemmel/Aquabot_Tom/install/aquabot_common:/home/t-lemmel/vrx_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/t-lemmel/Integ/build/integ_my_robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/t-lemmel/Integ/build/visual_servoing:/home/t-lemmel/Integ/install/visual_servoing/lib/python3.10/site-packages:/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/t-lemmel/Aquabot_Tom/install/move_ekf/local/lib/python3.10/dist-packages:/home/t-lemmel/vrx_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/t-lemmel/Integ/install/integ_my_robot_interfaces:/home/t-lemmel/Integ/install/integ_description:/home/t-lemmel/Aquabot_Tom/install/test_float:/home/t-lemmel/Aquabot_Tom/install/package_thruster_activation:/home/t-lemmel/Aquabot_Tom/install/mapping:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces:/home/t-lemmel/Aquabot_Tom/install/move_ekf:/home/t-lemmel/Aquabot_Tom/install/astar_path_planner:/home/t-lemmel/Aquabot_Tom/install/aquabot_ekf:/home/t-lemmel/Aquabot_Tom/install/aquabot_common:/home/t-lemmel/vrx_ws/install:/opt/ros/humble')]), 'shell': False}
+[1.936981] (-) TimerEvent: {}
+[2.043995] (-) TimerEvent: {}
+[2.144579] (-) TimerEvent: {}
+[2.208349] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.244806] (-) TimerEvent: {}
+[2.346321] (-) TimerEvent: {}
+[2.447485] (-) TimerEvent: {}
+[2.548053] (-) TimerEvent: {}
+[2.649000] (-) TimerEvent: {}
+[2.750027] (-) TimerEvent: {}
+[2.850684] (-) TimerEvent: {}
+[2.952521] (-) TimerEvent: {}
+[3.053756] (-) TimerEvent: {}
+[3.148047] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.154117] (-) TimerEvent: {}
+[3.255412] (-) TimerEvent: {}
+[3.328775] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[3.355674] (-) TimerEvent: {}
+[3.382741] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.455843] (-) TimerEvent: {}
+[3.456751] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.556027] (-) TimerEvent: {}
+[3.663996] (-) TimerEvent: {}
+[3.767110] (-) TimerEvent: {}
+[3.833073] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.867439] (-) TimerEvent: {}
+[3.968787] (-) TimerEvent: {}
+[4.064031] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[4.069593] (-) TimerEvent: {}
+[4.170954] (-) TimerEvent: {}
+[4.177050] (integ_description) CommandEnded: {'returncode': 0}
+[4.271812] (-) TimerEvent: {}
+[4.283508] (integ_description) JobProgress: {'identifier': 'integ_description', 'progress': 'install'}
+[4.328355] (integ_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/t-lemmel/Integ/build/integ_description'], 'cwd': '/home/t-lemmel/Integ/build/integ_description', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/home/t-lemmel/vrx_ws/install/lib'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', '/home/t-lemmel/vrx_ws/install/share/wamv_description/models:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/models/tmp:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/models:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/worlds:/home/t-lemmel/vrx_ws/install/share/vrx_gz/models/tmp:/home/t-lemmel/vrx_ws/install/share/vrx_gz/models:/home/t-lemmel/vrx_ws/install/share/vrx_gz/worlds/2023_practice:/home/t-lemmel/vrx_ws/install/share/vrx_gz/worlds:/home/t-lemmel/vrx_ws/install/share/aquabot_description/models:/home/t-lemmel/vrx_ws/install/share/vrx_gazebo/models:/home/t-lemmel/vrx_ws/install/share/'), ('USER', 't-lemmel'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces/lib:/home/t-lemmel/vrx_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/opt/ros/noetic/lib'), ('ros1_workspaces', ''), ('PS1_ori', '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('HOME', '/home/t-lemmel'), ('ros2_workspaces', '/opt/ros/humble /home/t-lemmel/vrx_ws /home/t-lemmel/Aquabot_Tom /home/t-lemmel/Ros_Labs /home/t-lemmel/Integ'), ('OLDPWD', '/home/t-lemmel/Integ/command/'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '3549'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/t-lemmel/Ros_Labs/install:/home/t-lemmel/Aquabot_Tom/install:/home/t-lemmel/vrx_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 't-lemmel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 't-lemmel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tlemmel-Predator-PH317-51:@/tmp/.ICE-unix/2008,unix/tlemmel-Predator-PH317-51:/tmp/.ICE-unix/2008'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8f5af9fc_d6c8_4895_bc7d_b8e48651e458'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/t-lemmel/Aquabot_Tom/install/test_float:/home/t-lemmel/Aquabot_Tom/install/package_thruster_activation:/home/t-lemmel/Aquabot_Tom/install/mapping:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces:/home/t-lemmel/Aquabot_Tom/install/move_ekf:/home/t-lemmel/Aquabot_Tom/install/astar_path_planner:/home/t-lemmel/Aquabot_Tom/install/aquabot_ekf:/home/t-lemmel/Aquabot_Tom/install/aquabot_common:/home/t-lemmel/vrx_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/t-lemmel/Integ/build/integ_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/t-lemmel/Integ/build/visual_servoing:/home/t-lemmel/Integ/install/visual_servoing/lib/python3.10/site-packages:/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/t-lemmel/Aquabot_Tom/install/move_ekf/local/lib/python3.10/dist-packages:/home/t-lemmel/vrx_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/t-lemmel/Integ/install/integ_my_robot_interfaces:/home/t-lemmel/Integ/install/integ_description:/home/t-lemmel/Aquabot_Tom/install/test_float:/home/t-lemmel/Aquabot_Tom/install/package_thruster_activation:/home/t-lemmel/Aquabot_Tom/install/mapping:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces:/home/t-lemmel/Aquabot_Tom/install/move_ekf:/home/t-lemmel/Aquabot_Tom/install/astar_path_planner:/home/t-lemmel/Aquabot_Tom/install/aquabot_ekf:/home/t-lemmel/Aquabot_Tom/install/aquabot_common:/home/t-lemmel/vrx_ws/install:/opt/ros/humble')]), 'shell': False}
+[4.358217] (integ_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.359937] (integ_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.361672] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/config/joint_names_scara_sw.yaml\n'}
+[4.362565] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/config.rviz\n'}
+[4.364257] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/effort_manual.yaml\n'}
+[4.365764] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/position_manual.yaml\n'}
+[4.366821] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/state_publisher_launch.py\n'}
+[4.368245] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/target_launch.py\n'}
+[4.369344] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/upload_launch.py\n'}
+[4.370101] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/velocity_manual.yaml\n'}
+[4.370444] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/launch/world_launch.py\n'}
+[4.370595] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/meshes/base_link.STL\n'}
+[4.371345] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/meshes/link_1.STL\n'}
+[4.371632] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/meshes/link_2.STL\n'}
+[4.371908] (-) TimerEvent: {}
+[4.372134] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/urdf/camera.xacro\n'}
+[4.372463] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/urdf/scara_sw.xacro\n'}
+[4.372675] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/urdf/scara_sw_identification.urdf\n'}
+[4.372833] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/urdf/target.xacro\n'}
+[4.373047] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/urdf/world.sdf\n'}
+[4.373197] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/ament_index/resource_index/package_run_dependencies/integ_description\n'}
+[4.373410] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/ament_index/resource_index/parent_prefix_path/integ_description\n'}
+[4.373579] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/environment/ament_prefix_path.sh\n'}
+[4.373782] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/environment/ament_prefix_path.dsv\n'}
+[4.374012] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/environment/path.sh\n'}
+[4.374152] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/environment/path.dsv\n'}
+[4.374356] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/local_setup.bash\n'}
+[4.376273] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/local_setup.sh\n'}
+[4.377399] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/local_setup.zsh\n'}
+[4.378472] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/local_setup.dsv\n'}
+[4.378893] (integ_description) StdoutLine: {'line': b'-- Symlinking: /home/t-lemmel/Integ/install/integ_description/share/integ_description/package.dsv\n'}
+[4.418735] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/ament_index/resource_index/packages/integ_description\n'}
+[4.419554] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/cmake/integ_descriptionConfig.cmake\n'}
+[4.420153] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/cmake/integ_descriptionConfig-version.cmake\n'}
+[4.421430] (integ_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_description/share/integ_description/package.xml\n'}
+[4.430262] (integ_description) CommandEnded: {'returncode': 0}
+[4.472562] (-) TimerEvent: {}
+[4.574497] (-) TimerEvent: {}
+[4.676774] (-) TimerEvent: {}
+[4.778921] (-) TimerEvent: {}
+[4.880263] (-) TimerEvent: {}
+[4.983169] (-) TimerEvent: {}
+[5.089979] (-) TimerEvent: {}
+[5.190775] (-) TimerEvent: {}
+[5.191648] (integ_description) JobEnded: {'identifier': 'integ_description', 'rc': 0}
+[5.291108] (-) TimerEvent: {}
+[5.392493] (-) TimerEvent: {}
+[5.493646] (-) TimerEvent: {}
+[5.594576] (-) TimerEvent: {}
+[5.695578] (-) TimerEvent: {}
+[5.796196] (-) TimerEvent: {}
+[5.897312] (-) TimerEvent: {}
+[5.998381] (-) TimerEvent: {}
+[6.099873] (-) TimerEvent: {}
+[6.131538] (visual_servoing) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/t-lemmel/Integ/build/visual_servoing/build', '--no-deps', 'install_data'], 'cwd': '/home/t-lemmel/Integ/build/visual_servoing', 'env': {'GZ_SIM_SYSTEM_PLUGIN_PATH': '/home/t-lemmel/vrx_ws/install/lib', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/t-lemmel/vrx_ws/install/share/wamv_description/models:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/models/tmp:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/models:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/worlds:/home/t-lemmel/vrx_ws/install/share/vrx_gz/models/tmp:/home/t-lemmel/vrx_ws/install/share/vrx_gz/models:/home/t-lemmel/vrx_ws/install/share/vrx_gz/worlds/2023_practice:/home/t-lemmel/vrx_ws/install/share/vrx_gz/worlds:/home/t-lemmel/vrx_ws/install/share/aquabot_description/models:/home/t-lemmel/vrx_ws/install/share/vrx_gazebo/models:/home/t-lemmel/vrx_ws/install/share/', 'USER': 't-lemmel', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces/lib:/home/t-lemmel/vrx_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/opt/ros/noetic/lib', 'ros1_workspaces': '', 'PS1_ori': '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'HOME': '/home/t-lemmel', 'ros2_workspaces': '/opt/ros/humble /home/t-lemmel/vrx_ws /home/t-lemmel/Aquabot_Tom /home/t-lemmel/Ros_Labs /home/t-lemmel/Integ', 'OLDPWD': '/home/t-lemmel/Integ/command/', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'fr_FR.UTF-8', 'SYSTEMD_EXEC_PID': '3549', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/t-lemmel/Ros_Labs/install:/home/t-lemmel/Aquabot_Tom/install:/home/t-lemmel/vrx_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 't-lemmel', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 't-lemmel', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/tlemmel-Predator-PH317-51:@/tmp/.ICE-unix/2008,unix/tlemmel-Predator-PH317-51:/tmp/.ICE-unix/2008', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8f5af9fc_d6c8_4895_bc7d_b8e48651e458', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.96', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/t-lemmel/Aquabot_Tom/install/test_float:/home/t-lemmel/Aquabot_Tom/install/package_thruster_activation:/home/t-lemmel/Aquabot_Tom/install/mapping:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces:/home/t-lemmel/Aquabot_Tom/install/move_ekf:/home/t-lemmel/Aquabot_Tom/install/astar_path_planner:/home/t-lemmel/Aquabot_Tom/install/aquabot_ekf:/home/t-lemmel/Aquabot_Tom/install/aquabot_common:/home/t-lemmel/vrx_ws/install:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/t-lemmel/Integ/build/visual_servoing', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/t-lemmel/Integ/build/visual_servoing/prefix_override:/home/t-lemmel/Integ/install/visual_servoing/lib/python3.10/site-packages:/home/t-lemmel/Integ/build/visual_servoing:/home/t-lemmel/Integ/install/visual_servoing/lib/python3.10/site-packages:/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/t-lemmel/Aquabot_Tom/install/move_ekf/local/lib/python3.10/dist-packages:/home/t-lemmel/vrx_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/t-lemmel/Integ/install/integ_my_robot_interfaces:/home/t-lemmel/Integ/install/integ_description:/home/t-lemmel/Aquabot_Tom/install/test_float:/home/t-lemmel/Aquabot_Tom/install/package_thruster_activation:/home/t-lemmel/Aquabot_Tom/install/mapping:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces:/home/t-lemmel/Aquabot_Tom/install/move_ekf:/home/t-lemmel/Aquabot_Tom/install/astar_path_planner:/home/t-lemmel/Aquabot_Tom/install/aquabot_ekf:/home/t-lemmel/Aquabot_Tom/install/aquabot_common:/home/t-lemmel/vrx_ws/install'}, 'shell': False}
+[6.200136] (-) TimerEvent: {}
+[6.229155] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[6.300364] (-) TimerEvent: {}
+[6.401439] (-) TimerEvent: {}
+[6.502420] (-) TimerEvent: {}
+[6.602978] (-) TimerEvent: {}
+[6.704190] (-) TimerEvent: {}
+[6.805619] (-) TimerEvent: {}
+[6.906143] (-) TimerEvent: {}
+[7.006980] (-) TimerEvent: {}
+[7.107799] (-) TimerEvent: {}
+[7.208783] (-) TimerEvent: {}
+[7.310609] (-) TimerEvent: {}
+[7.411952] (-) TimerEvent: {}
+[7.512814] (-) TimerEvent: {}
+[7.599497] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.612993] (-) TimerEvent: {}
+[7.632498] (visual_servoing) StdoutLine: {'line': b'running develop\n'}
+[7.633856] (visual_servoing) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[7.634872] (visual_servoing) StderrLine: {'line': b'  warnings.warn(\n'}
+[7.642901] (visual_servoing) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[7.643593] (visual_servoing) StderrLine: {'line': b'  warnings.warn(\n'}
+[7.713270] (-) TimerEvent: {}
+[7.814301] (-) TimerEvent: {}
+[7.915685] (-) TimerEvent: {}
+[8.016741] (-) TimerEvent: {}
+[8.118188] (-) TimerEvent: {}
+[8.218938] (-) TimerEvent: {}
+[8.320386] (-) TimerEvent: {}
+[8.421688] (-) TimerEvent: {}
+[8.522259] (-) TimerEvent: {}
+[8.615651] (visual_servoing) StdoutLine: {'line': b'running egg_info\n'}
+[8.617073] (visual_servoing) StdoutLine: {'line': b'writing visual_servoing.egg-info/PKG-INFO\n'}
+[8.618635] (visual_servoing) StdoutLine: {'line': b'writing dependency_links to visual_servoing.egg-info/dependency_links.txt\n'}
+[8.620356] (visual_servoing) StdoutLine: {'line': b'writing entry points to visual_servoing.egg-info/entry_points.txt\n'}
+[8.622429] (-) TimerEvent: {}
+[8.628293] (visual_servoing) StdoutLine: {'line': b'writing requirements to visual_servoing.egg-info/requires.txt\n'}
+[8.629097] (visual_servoing) StdoutLine: {'line': b'writing top-level names to visual_servoing.egg-info/top_level.txt\n'}
+[8.632207] (visual_servoing) StdoutLine: {'line': b"reading manifest file 'visual_servoing.egg-info/SOURCES.txt'\n"}
+[8.633811] (visual_servoing) StdoutLine: {'line': b"writing manifest file 'visual_servoing.egg-info/SOURCES.txt'\n"}
+[8.639947] (visual_servoing) StdoutLine: {'line': b'running build_ext\n'}
+[8.641708] (visual_servoing) StdoutLine: {'line': b'Creating /home/t-lemmel/Integ/install/visual_servoing/lib/python3.10/site-packages/visual-servoing.egg-link (link to .)\n'}
+[8.647855] (visual_servoing) StdoutLine: {'line': b'Installing FeatureDetector script to /home/t-lemmel/Integ/install/visual_servoing/lib/visual_servoing\n'}
+[8.648302] (visual_servoing) StdoutLine: {'line': b'Installing tracker script to /home/t-lemmel/Integ/install/visual_servoing/lib/visual_servoing\n'}
+[8.649660] (visual_servoing) StdoutLine: {'line': b'\n'}
+[8.649896] (visual_servoing) StdoutLine: {'line': b'Installed /home/t-lemmel/Integ/build/visual_servoing\n'}
+[8.650061] (visual_servoing) StdoutLine: {'line': b'running install_data\n'}
+[8.722696] (-) TimerEvent: {}
+[8.824177] (-) TimerEvent: {}
+[8.833304] (visual_servoing) CommandEnded: {'returncode': 0}
+[8.924564] (-) TimerEvent: {}
+[9.025717] (-) TimerEvent: {}
+[9.127441] (-) TimerEvent: {}
+[9.230990] (-) TimerEvent: {}
+[9.297566] (visual_servoing) JobEnded: {'identifier': 'visual_servoing', 'rc': 0}
+[9.311674] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.331304] (-) TimerEvent: {}
+[9.432508] (-) TimerEvent: {}
+[9.501877] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[9.532807] (-) TimerEvent: {}
+[9.633153] (-) TimerEvent: {}
+[9.645374] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[9.645727] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[9.646248] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[9.733311] (-) TimerEvent: {}
+[9.833753] (-) TimerEvent: {}
+[9.934749] (-) TimerEvent: {}
+[10.035344] (-) TimerEvent: {}
+[10.036924] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.135658] (-) TimerEvent: {}
+[10.236310] (-) TimerEvent: {}
+[10.247152] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[10.257637] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/t-lemmel/Integ/build/integ_my_robot_interfaces\n'}
+[10.336472] (-) TimerEvent: {}
+[10.363392] (integ_my_robot_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[10.404710] (integ_my_robot_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[10.436769] (-) TimerEvent: {}
+[10.439018] (integ_my_robot_interfaces) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_symlink_integ_my_robot_interfaces\n'}
+[10.537993] (-) TimerEvent: {}
+[10.638831] (-) TimerEvent: {}
+[10.740927] (-) TimerEvent: {}
+[10.842987] (-) TimerEvent: {}
+[10.944053] (-) TimerEvent: {}
+[11.044821] (-) TimerEvent: {}
+[11.145476] (-) TimerEvent: {}
+[11.249231] (-) TimerEvent: {}
+[11.350245] (-) TimerEvent: {}
+[11.451708] (-) TimerEvent: {}
+[11.553367] (-) TimerEvent: {}
+[11.623986] (integ_my_robot_interfaces) StdoutLine: {'line': b'[  6%] Built target integ_my_robot_interfaces__cpp\n'}
+[11.653487] (-) TimerEvent: {}
+[11.670955] (integ_my_robot_interfaces) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[11.678406] (integ_my_robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target integ_my_robot_interfaces__rosidl_generator_c\x1b[0m\n'}
+[11.685515] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[11.691315] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[11.717390] (integ_my_robot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[11.721154] (integ_my_robot_interfaces) StdoutLine: {'line': b'writing integ_my_robot_interfaces.egg-info/PKG-INFO\n'}
+[11.725662] (integ_my_robot_interfaces) StdoutLine: {'line': b'writing dependency_links to integ_my_robot_interfaces.egg-info/dependency_links.txt\n'}
+[11.726612] (integ_my_robot_interfaces) StdoutLine: {'line': b'writing top-level names to integ_my_robot_interfaces.egg-info/top_level.txt\n'}
+[11.740002] (integ_my_robot_interfaces) StdoutLine: {'line': b"reading manifest file 'integ_my_robot_interfaces.egg-info/SOURCES.txt'\n"}
+[11.740607] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/integ_my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/integ_my_robot_interfaces/msg/detail/center_and_area__functions.c.o\x1b[0m\n'}
+[11.742764] (integ_my_robot_interfaces) StdoutLine: {'line': b"writing manifest file 'integ_my_robot_interfaces.egg-info/SOURCES.txt'\n"}
+[11.757216] (-) TimerEvent: {}
+[11.858683] (-) TimerEvent: {}
+[11.920606] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_integ_my_robot_interfaces_egg\n'}
+[11.959150] (-) TimerEvent: {}
+[12.061705] (-) TimerEvent: {}
+[12.164961] (-) TimerEvent: {}
+[12.266443] (-) TimerEvent: {}
+[12.368279] (-) TimerEvent: {}
+[12.469090] (-) TimerEvent: {}
+[12.570054] (-) TimerEvent: {}
+[12.670488] (-) TimerEvent: {}
+[12.771410] (-) TimerEvent: {}
+[12.873186] (-) TimerEvent: {}
+[12.955213] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libinteg_my_robot_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[12.964067] (integ_my_robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target integ_my_robot_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[12.976465] (-) TimerEvent: {}
+[13.008199] (integ_my_robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target integ_my_robot_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[13.015400] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/integ_my_robot_interfaces/msg/center_and_area__type_support.cpp.o\x1b[0m\n'}
+[13.020577] (integ_my_robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target integ_my_robot_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[13.061295] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/integ_my_robot_interfaces/msg/detail/center_and_area__type_support.cpp.o\x1b[0m\n'}
+[13.076907] (-) TimerEvent: {}
+[13.078247] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/integ_my_robot_interfaces/msg/detail/dds_fastrtps/center_and_area__type_support.cpp.o\x1b[0m\n'}
+[13.177216] (-) TimerEvent: {}
+[13.278362] (-) TimerEvent: {}
+[13.379345] (-) TimerEvent: {}
+[13.453367] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 32%] Built target integ_my_robot_interfaces__rosidl_generator_c\n'}
+[13.479660] (-) TimerEvent: {}
+[13.580372] (-) TimerEvent: {}
+[13.680949] (-) TimerEvent: {}
+[13.781827] (-) TimerEvent: {}
+[13.882822] (-) TimerEvent: {}
+[13.983501] (-) TimerEvent: {}
+[14.084474] (-) TimerEvent: {}
+[14.185103] (-) TimerEvent: {}
+[14.286684] (-) TimerEvent: {}
+[14.387849] (-) TimerEvent: {}
+[14.488697] (-) TimerEvent: {}
+[14.589833] (-) TimerEvent: {}
+[14.691309] (-) TimerEvent: {}
+[14.791965] (-) TimerEvent: {}
+[14.893544] (-) TimerEvent: {}
+[14.994305] (-) TimerEvent: {}
+[15.095516] (-) TimerEvent: {}
+[15.196446] (-) TimerEvent: {}
+[15.300151] (-) TimerEvent: {}
+[15.410424] (-) TimerEvent: {}
+[15.510872] (-) TimerEvent: {}
+[15.611885] (-) TimerEvent: {}
+[15.713093] (-) TimerEvent: {}
+[15.817220] (-) TimerEvent: {}
+[15.919721] (-) TimerEvent: {}
+[16.020680] (-) TimerEvent: {}
+[16.123597] (-) TimerEvent: {}
+[16.226657] (-) TimerEvent: {}
+[16.228127] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libinteg_my_robot_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[16.326776] (-) TimerEvent: {}
+[16.421818] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 35%] Built target integ_my_robot_interfaces__rosidl_typesupport_cpp\n'}
+[16.427089] (-) TimerEvent: {}
+[16.527714] (-) TimerEvent: {}
+[16.582792] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX shared library libinteg_my_robot_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[16.630259] (-) TimerEvent: {}
+[16.669232] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libinteg_my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[16.732811] (-) TimerEvent: {}
+[16.835182] (-) TimerEvent: {}
+[16.837488] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 41%] Built target integ_my_robot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[16.935421] (-) TimerEvent: {}
+[17.022001] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 41%] Built target integ_my_robot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[17.038346] (-) TimerEvent: {}
+[17.087188] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[17.138835] (-) TimerEvent: {}
+[17.240370] (-) TimerEvent: {}
+[17.341295] (-) TimerEvent: {}
+[17.441741] (-) TimerEvent: {}
+[17.542531] (-) TimerEvent: {}
+[17.642954] (-) TimerEvent: {}
+[17.743765] (-) TimerEvent: {}
+[17.844678] (-) TimerEvent: {}
+[17.945758] (-) TimerEvent: {}
+[18.047247] (-) TimerEvent: {}
+[18.129401] (integ_my_robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target integ_my_robot_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[18.147588] (-) TimerEvent: {}
+[18.172304] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/integ_my_robot_interfaces/msg/center_and_area__type_support.cpp.o\x1b[0m\n'}
+[18.248022] (-) TimerEvent: {}
+[18.292890] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libinteg_my_robot_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[18.350123] (-) TimerEvent: {}
+[18.450759] (-) TimerEvent: {}
+[18.466190] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 51%] Built target integ_my_robot_interfaces__rosidl_typesupport_c\n'}
+[18.509038] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[18.551097] (-) TimerEvent: {}
+[18.652654] (-) TimerEvent: {}
+[18.753722] (-) TimerEvent: {}
+[18.854205] (-) TimerEvent: {}
+[18.955118] (-) TimerEvent: {}
+[19.056109] (-) TimerEvent: {}
+[19.156982] (-) TimerEvent: {}
+[19.258071] (-) TimerEvent: {}
+[19.358528] (-) TimerEvent: {}
+[19.458989] (-) TimerEvent: {}
+[19.559601] (-) TimerEvent: {}
+[19.562698] (integ_my_robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target integ_my_robot_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[19.605493] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/integ_my_robot_interfaces/msg/detail/center_and_area__type_support.c.o\x1b[0m\n'}
+[19.660065] (-) TimerEvent: {}
+[19.761110] (-) TimerEvent: {}
+[19.772349] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libinteg_my_robot_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[19.861441] (-) TimerEvent: {}
+[19.896716] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 61%] Built target integ_my_robot_interfaces__rosidl_typesupport_introspection_c\n'}
+[19.941760] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[19.961721] (-) TimerEvent: {}
+[20.064283] (-) TimerEvent: {}
+[20.165071] (-) TimerEvent: {}
+[20.266187] (-) TimerEvent: {}
+[20.366835] (-) TimerEvent: {}
+[20.467693] (-) TimerEvent: {}
+[20.568073] (-) TimerEvent: {}
+[20.668491] (-) TimerEvent: {}
+[20.769217] (-) TimerEvent: {}
+[20.870511] (-) TimerEvent: {}
+[20.923342] (integ_my_robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target integ_my_robot_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[20.961810] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/integ_my_robot_interfaces/msg/detail/center_and_area__type_support_c.cpp.o\x1b[0m\n'}
+[20.970718] (-) TimerEvent: {}
+[21.071685] (-) TimerEvent: {}
+[21.172297] (-) TimerEvent: {}
+[21.273673] (-) TimerEvent: {}
+[21.374295] (-) TimerEvent: {}
+[21.475659] (-) TimerEvent: {}
+[21.579912] (-) TimerEvent: {}
+[21.680842] (-) TimerEvent: {}
+[21.781617] (-) TimerEvent: {}
+[21.882605] (-) TimerEvent: {}
+[21.983298] (-) TimerEvent: {}
+[22.084441] (-) TimerEvent: {}
+[22.185511] (-) TimerEvent: {}
+[22.287181] (-) TimerEvent: {}
+[22.388856] (-) TimerEvent: {}
+[22.489872] (-) TimerEvent: {}
+[22.565206] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libinteg_my_robot_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[22.590300] (-) TimerEvent: {}
+[22.691861] (-) TimerEvent: {}
+[22.793014] (-) TimerEvent: {}
+[22.897457] (-) TimerEvent: {}
+[22.920952] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 70%] Built target integ_my_robot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[22.997751] (-) TimerEvent: {}
+[23.011269] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 70%] Built target integ_my_robot_interfaces\n'}
+[23.097834] (-) TimerEvent: {}
+[23.115202] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[23.198116] (-) TimerEvent: {}
+[23.299384] (-) TimerEvent: {}
+[23.400546] (-) TimerEvent: {}
+[23.501172] (-) TimerEvent: {}
+[23.601991] (-) TimerEvent: {}
+[23.703045] (-) TimerEvent: {}
+[23.804056] (-) TimerEvent: {}
+[23.905011] (-) TimerEvent: {}
+[24.006221] (-) TimerEvent: {}
+[24.107715] (-) TimerEvent: {}
+[24.208795] (-) TimerEvent: {}
+[24.309721] (-) TimerEvent: {}
+[24.410111] (-) TimerEvent: {}
+[24.510458] (-) TimerEvent: {}
+[24.611055] (-) TimerEvent: {}
+[24.711805] (-) TimerEvent: {}
+[24.812415] (-) TimerEvent: {}
+[24.812842] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 74%] Built target integ_my_robot_interfaces__py\n'}
+[24.845101] (integ_my_robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target integ_my_robot_interfaces__rosidl_generator_py\x1b[0m\n'}
+[24.899732] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/integ_my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/integ_my_robot_interfaces/msg/_center_and_area_s.c.o\x1b[0m\n'}
+[24.912703] (-) TimerEvent: {}
+[25.013815] (-) TimerEvent: {}
+[25.115083] (-) TimerEvent: {}
+[25.216152] (-) TimerEvent: {}
+[25.316611] (-) TimerEvent: {}
+[25.417397] (-) TimerEvent: {}
+[25.517972] (-) TimerEvent: {}
+[25.620231] (-) TimerEvent: {}
+[25.721214] (-) TimerEvent: {}
+[25.822380] (-) TimerEvent: {}
+[25.923878] (-) TimerEvent: {}
+[25.945878] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/integ_my_robot_interfaces/libinteg_my_robot_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[26.024278] (-) TimerEvent: {}
+[26.125629] (-) TimerEvent: {}
+[26.170689] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 80%] Built target integ_my_robot_interfaces__rosidl_generator_py\n'}
+[26.225974] (-) TimerEvent: {}
+[26.256451] (integ_my_robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target integ_my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[26.309333] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/integ_my_robot_interfaces/_integ_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[26.326216] (-) TimerEvent: {}
+[26.427396] (-) TimerEvent: {}
+[26.527683] (-) TimerEvent: {}
+[26.628459] (-) TimerEvent: {}
+[26.728995] (-) TimerEvent: {}
+[26.786963] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[26.829226] (-) TimerEvent: {}
+[26.930486] (-) TimerEvent: {}
+[26.994928] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 87%] Built target integ_my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[27.030781] (-) TimerEvent: {}
+[27.044297] (integ_my_robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target integ_my_robot_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[27.105871] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/integ_my_robot_interfaces/_integ_my_robot_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[27.130983] (-) TimerEvent: {}
+[27.231999] (-) TimerEvent: {}
+[27.333287] (-) TimerEvent: {}
+[27.433632] (-) TimerEvent: {}
+[27.526808] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[27.533760] (-) TimerEvent: {}
+[27.634381] (-) TimerEvent: {}
+[27.735390] (-) TimerEvent: {}
+[27.737164] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 93%] Built target integ_my_robot_interfaces__rosidl_typesupport_c__pyext\n'}
+[27.782839] (integ_my_robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target integ_my_robot_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[27.834341] (integ_my_robot_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/integ_my_robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/integ_my_robot_interfaces/_integ_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[27.835489] (-) TimerEvent: {}
+[27.936035] (-) TimerEvent: {}
+[28.036629] (-) TimerEvent: {}
+[28.137538] (-) TimerEvent: {}
+[28.196862] (integ_my_robot_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[28.237749] (-) TimerEvent: {}
+[28.339084] (-) TimerEvent: {}
+[28.404853] (integ_my_robot_interfaces) StdoutLine: {'line': b'[100%] Built target integ_my_robot_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[28.439362] (-) TimerEvent: {}
+[28.456960] (integ_my_robot_interfaces) CommandEnded: {'returncode': 0}
+[28.539556] (-) TimerEvent: {}
+[28.640434] (-) TimerEvent: {}
+[28.716283] (integ_my_robot_interfaces) JobProgress: {'identifier': 'integ_my_robot_interfaces', 'progress': 'install'}
+[28.717191] (integ_my_robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/t-lemmel/Integ/build/integ_my_robot_interfaces'], 'cwd': '/home/t-lemmel/Integ/build/integ_my_robot_interfaces', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/home/t-lemmel/vrx_ws/install/lib'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', '/home/t-lemmel/vrx_ws/install/share/wamv_description/models:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/models/tmp:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/models:/home/t-lemmel/vrx_ws/install/share/aquabot_gz/worlds:/home/t-lemmel/vrx_ws/install/share/vrx_gz/models/tmp:/home/t-lemmel/vrx_ws/install/share/vrx_gz/models:/home/t-lemmel/vrx_ws/install/share/vrx_gz/worlds/2023_practice:/home/t-lemmel/vrx_ws/install/share/vrx_gz/worlds:/home/t-lemmel/vrx_ws/install/share/aquabot_description/models:/home/t-lemmel/vrx_ws/install/share/vrx_gazebo/models:/home/t-lemmel/vrx_ws/install/share/'), ('USER', 't-lemmel'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces/lib:/home/t-lemmel/vrx_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/opt/ros/noetic/lib'), ('ros1_workspaces', ''), ('PS1_ori', '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('HOME', '/home/t-lemmel'), ('ros2_workspaces', '/opt/ros/humble /home/t-lemmel/vrx_ws /home/t-lemmel/Aquabot_Tom /home/t-lemmel/Ros_Labs /home/t-lemmel/Integ'), ('OLDPWD', '/home/t-lemmel/Integ/command/'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '3549'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/t-lemmel/Ros_Labs/install:/home/t-lemmel/Aquabot_Tom/install:/home/t-lemmel/vrx_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 't-lemmel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 't-lemmel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tlemmel-Predator-PH317-51:@/tmp/.ICE-unix/2008,unix/tlemmel-Predator-PH317-51:/tmp/.ICE-unix/2008'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8f5af9fc_d6c8_4895_bc7d_b8e48651e458'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/t-lemmel/Aquabot_Tom/install/test_float:/home/t-lemmel/Aquabot_Tom/install/package_thruster_activation:/home/t-lemmel/Aquabot_Tom/install/mapping:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces:/home/t-lemmel/Aquabot_Tom/install/move_ekf:/home/t-lemmel/Aquabot_Tom/install/astar_path_planner:/home/t-lemmel/Aquabot_Tom/install/aquabot_ekf:/home/t-lemmel/Aquabot_Tom/install/aquabot_common:/home/t-lemmel/vrx_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/t-lemmel/Integ/build/integ_my_robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/t-lemmel/Integ/build/visual_servoing:/home/t-lemmel/Integ/install/visual_servoing/lib/python3.10/site-packages:/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/t-lemmel/Aquabot_Tom/install/move_ekf/local/lib/python3.10/dist-packages:/home/t-lemmel/vrx_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/t-lemmel/Integ/install/integ_my_robot_interfaces:/home/t-lemmel/Integ/install/integ_description:/home/t-lemmel/Aquabot_Tom/install/test_float:/home/t-lemmel/Aquabot_Tom/install/package_thruster_activation:/home/t-lemmel/Aquabot_Tom/install/mapping:/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces:/home/t-lemmel/Aquabot_Tom/install/move_ekf:/home/t-lemmel/Aquabot_Tom/install/astar_path_planner:/home/t-lemmel/Aquabot_Tom/install/aquabot_ekf:/home/t-lemmel/Aquabot_Tom/install/aquabot_common:/home/t-lemmel/vrx_ws/install:/opt/ros/humble')]), 'shell': False}
+[28.740756] (-) TimerEvent: {}
+[28.751088] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[28.754331] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[28.755540] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/integ_my_robot_interfaces\n'}
+[28.757213] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/center_and_area.h\n'}
+[28.757819] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__functions.h\n'}
+[28.758229] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__struct.h\n'}
+[28.759589] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__type_support.h\n'}
+[28.760491] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[28.761074] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/library_path.sh\n'}
+[28.761506] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/library_path.dsv\n'}
+[28.763707] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__rosidl_typesupport_fastrtps_c.h\n'}
+[28.765097] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[28.765644] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__rosidl_typesupport_introspection_c.h\n'}
+[28.765845] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[28.766787] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/center_and_area.hpp\n'}
+[28.767556] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__builder.hpp\n'}
+[28.768555] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__struct.hpp\n'}
+[28.769123] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__traits.hpp\n'}
+[28.769972] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[28.770379] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[28.771336] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/integ_my_robot_interfaces/integ_my_robot_interfaces/msg/detail/center_and_area__rosidl_typesupport_introspection_cpp.hpp\n'}
+[28.772700] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/pythonpath.sh\n'}
+[28.773843] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/pythonpath.dsv\n'}
+[28.775885] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[28.777289] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[28.778198] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[28.779575] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[28.780621] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/__init__.py\n'}
+[28.781413] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/_integ_my_robot_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[28.781934] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/_integ_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[28.782524] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/_integ_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[28.784031] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[28.784801] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[28.785082] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[28.785302] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/libinteg_my_robot_interfaces__rosidl_generator_py.so\n'}
+[28.785447] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/msg/__init__.py\n'}
+[28.785885] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/msg/_center_and_area.py\n'}
+[28.787179] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/msg/_center_and_area_s.c\n'}
+[28.787445] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[28.787981] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[28.788679] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/integ_my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[28.789416] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/msg/CenterAndArea.idl\n'}
+[28.789936] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/msg/CenterAndArea.msg\n'}
+[28.790295] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/ament_index/resource_index/package_run_dependencies/integ_my_robot_interfaces\n'}
+[28.790708] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/ament_index/resource_index/parent_prefix_path/integ_my_robot_interfaces\n'}
+[28.791878] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/ament_prefix_path.sh\n'}
+[28.792986] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/ament_prefix_path.dsv\n'}
+[28.794020] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/path.sh\n'}
+[28.794354] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/environment/path.dsv\n'}
+[28.794903] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/local_setup.bash\n'}
+[28.795492] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/local_setup.sh\n'}
+[28.797584] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/local_setup.zsh\n'}
+[28.799814] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/local_setup.dsv\n'}
+[28.800190] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.dsv\n'}
+[28.838925] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/ament_index/resource_index/packages/integ_my_robot_interfaces\n'}
+[28.839749] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[28.841254] (-) TimerEvent: {}
+[28.842989] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[28.844250] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[28.845293] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[28.845856] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[28.846399] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[28.846956] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[28.847296] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfacesConfig.cmake\n'}
+[28.847885] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfacesConfig-version.cmake\n'}
+[28.848653] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/package.xml\n'}
+[28.849195] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_generator_c.so\n'}
+[28.850854] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_generator_c.so" to ""\n'}
+[28.856469] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[28.857399] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[28.857690] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[28.857936] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[28.858128] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_c.so\n'}
+[28.858552] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[28.858865] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[28.860869] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[28.862540] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[28.864044] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[28.864900] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_cpp.so\n'}
+[28.867830] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[28.941442] (-) TimerEvent: {}
+[29.042579] (-) TimerEvent: {}
+[29.045410] (integ_my_robot_interfaces) StdoutLine: {'line': b"Listing '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces'...\n"}
+[29.046352] (integ_my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/__init__.py'...\n"}
+[29.046859] (integ_my_robot_interfaces) StdoutLine: {'line': b"Listing '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/msg'...\n"}
+[29.047147] (integ_my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/msg/__init__.py'...\n"}
+[29.047356] (integ_my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/t-lemmel/Integ/install/integ_my_robot_interfaces/local/lib/python3.10/dist-packages/integ_my_robot_interfaces/msg/_center_and_area.py'...\n"}
+[29.071229] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_generator_py.so\n'}
+[29.073348] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/lib/libinteg_my_robot_interfaces__rosidl_generator_py.so" to ""\n'}
+[29.074807] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_generator_cExport.cmake\n'}
+[29.075766] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[29.076467] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[29.077643] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[29.078601] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[29.079128] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[29.079297] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[29.079536] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[29.079816] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_generator_cppExport.cmake\n'}
+[29.080090] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[29.080304] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[29.080492] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[29.080700] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[29.081144] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[29.081948] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/integ_my_robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[29.082340] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_generator_pyExport.cmake\n'}
+[29.082652] (integ_my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/t-lemmel/Integ/install/integ_my_robot_interfaces/share/integ_my_robot_interfaces/cmake/export_integ_my_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[29.088536] (integ_my_robot_interfaces) CommandEnded: {'returncode': 0}
+[29.142743] (-) TimerEvent: {}
+[29.244160] (-) TimerEvent: {}
+[29.348824] (-) TimerEvent: {}
+[29.449931] (-) TimerEvent: {}
+[29.550388] (-) TimerEvent: {}
+[29.651047] (-) TimerEvent: {}
+[29.751433] (-) TimerEvent: {}
+[29.852152] (-) TimerEvent: {}
+[29.953397] (-) TimerEvent: {}
+[30.056948] (-) TimerEvent: {}
+[30.158873] (-) TimerEvent: {}
+[30.202801] (integ_my_robot_interfaces) JobEnded: {'identifier': 'integ_my_robot_interfaces', 'rc': 0}
+[30.209708] (-) EventReactorShutdown: {}

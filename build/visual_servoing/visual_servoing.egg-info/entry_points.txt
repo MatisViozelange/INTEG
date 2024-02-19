@@ -1,0 +1,4 @@
+[console_scripts]
+FeatureDetector = visual_servoing.FeatureDetector:main
+tracker = visual_servoing.tracker:main
+

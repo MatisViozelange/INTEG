@@ -1,79 +1,101 @@
 import rclpy
 from rclpy.node import Node
-from sensor_msgs.msg import Image
-import cv2
-import numpy as np
-from cv_bridge import CvBridge
 from integ_my_robot_interfaces.msg import CenterAndArea
+from std_msgs.msg import Float64
+import numpy as np
+import math
+from sensor_msgs.msg import JointState
 
-class VisualServoing(Node):
+class Tracker(Node):
     def __init__(self):
-        super().__init__('visual_servoing')
-        # Add your initialization code here
+        super().__init__('Tracker')
 
-        ## a subscriber to the camera topic
-        self.subscription = self.create_subscription(Image, 'scara/image', self.listener_callback, 10)
+        #a joint state subscriber
+        self.joint_subscriber = self.create_subscription(JointState, '/scara/joint_states', self.joint_states_callback, 10)
+
+        # a subscriber to the DetectedFeature topic
+        self.feature_subscriber = self.create_subscription(CenterAndArea, 'center_and_area_detected', self.listener_callback, 10)
         
-        # a publisher of a custom message type that contains a point and and integer
-        self.publisher_ = self.create_publisher(CenterAndArea, 'center_and_area_detected', 10)
+        # publisher of the joint1 position command
+        self.joint1_publisher_ = self.create_publisher(Float64, '/scara/joint_1_cmd_pos', 10)
+        # publisher of the joint2 position command
+        self.joint2_publisher_ = self.create_publisher(Float64, '/scara/joint_2_cmd_pos', 10)
 
-        self.cv_bridge = CvBridge() # Create a CvBridge object to convert the image message to OpenCV format
+        self.latest_joint1 = 0
+        self.latest_joint2 = 0
+
+    def joint_states_callback(self, msg):
+        self.q1 = msg.position[1]
+        self.q2 = msg.position[2]
 
     def listener_callback(self, msg):
-        #TODO analyse the image using openCV and counts the number of blue pixels  and the center of the blue pixels then publish the center and the number of blue pixels
-        
-        # Convert the image message to OpenCV format
-        try:
-            cv_image = self.cv_bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
-        except Exception as e:
-            self.get_logger().error(f'Error converting image from ros2 to openCV format: {e}')
-            return
 
-        converted_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
+        joint1_command = Float64()
+        joint2_command = Float64()
 
-        window_name = 'Image'
-        cv2.imshow(window_name, converted_image) 
-        cv2.waitKey(3)
+        if msg.detected == True :
+
+            error_x = abs(320 - msg.center.x) # 320 is the center of the image
+            error_y = abs(200 - msg.center.y) # 200 is the center of the image
+
+            error_vector_pixel = [error_x, error_y] # the error vector in pixels
+
+            vertical_fov = 2.094 # the vertical field of view of the camera in radians
+            horizontal_fov = 2.094 # the horizontal field of view of the camera in radians
+
+            distance_to_target = 0.11 # the distance from the camera to the target in meters
+
+            image_width_meters = 2*distance_to_target*math.tan(horizontal_fov/2)
+            image_height_meters = 2*distance_to_target*math.tan(vertical_fov/2)
+
+            error_vector = [error_x/640*image_width_meters,error_y/400*image_height_meters] # convert the error vector from pixels to meters
+
+            desired_position = [-1 * component for component in error_vector]
+
+            l1 = 0.28002 # the length of the first link
+            l2 = 0.28002 # the length of the second link
+
+            # solve inverse kinematics to get the joint angles that result in a movement of -error_vector
+            try :
+                c2 = (desired_position[0]**2 + desired_position[1]**2 - l1**2 - l2**2)/(2*l1*l2) 
+                s2 = math.sqrt(1 - c2**2)
+
+                c1 = ((l1+l2*c2)*desired_position[0] + l2*s2*desired_position[1])/(desired_position[0]**2 + desired_position[1]**2)
+                s1 = ((l1+l2*c2)*desired_position[1] - l2*s2*desired_position[0])/(desired_position[0]**2 + desired_position[1]**2)
+
+                theta1 = math.atan2(s1, c1)
+                theta2 = math.atan2(s2, c2)
+                
+                joint1_command.data = theta1
+                joint2_command.data = theta2
+
+                self.latest_joint1_command = joint1_command
+                self.latest_joint2_command = joint2_command
+
+                #convert the joint differences angles between q1 and theta 1 to degrees and print them
+                joint1_diff = (theta1 - self.q1) * 180 / math.pi
+                joint2_diff = (theta2 - self.q2) * 180 / math.pi
+                self.get_logger().info(f'joint1 diff: {joint1_diff}, joint2 diff: {joint2_diff}')
 
 
-        # Define the lower and upper bounds for the blue color
-        lower_blue = np.array([150, 0, 0])
-        upper_blue = np.array([255, 100, 100])
+                self.joint1_publisher_.publish(joint1_command)
+                self.joint2_publisher_.publish(joint2_command)
+            except Exception as e:
+                self.get_logger().error(f'Error in inverse kinematics: {e}')
+                return
 
-        # Threshold the image to get only the blue pixels
-        mask = cv2.inRange(converted_image, lower_blue, upper_blue)
-
-        cv2.imshow('Blue Mask', mask) 
-        cv2.waitKey(3)
-
-        # Count the number of blue pixels
-        blue_pixel_count = cv2.countNonZero(mask)
-
-        # Calculate the center of the blue pixels
-        M = cv2.moments(mask)
-
-        try :
-            center_x = int(M["m10"] / M["m00"])
-            center_y = int(M["m01"] / M["m00"])
-
-            # Publish the center and the number of blue pixels
-            center_and_area = CenterAndArea()
-            # a print that show the center and the number of blue pixels
-            self.get_logger().info(f'Center: ({center_x}, {center_y}), Blue pixels: {blue_pixel_count}')
-            center_and_area.center.x = float(center_x)
-            center_and_area.center.y = float(center_y)
-            center_and_area.area = blue_pixel_count
-            self.publisher_.publish(center_and_area)
-        except Exception as e:
-            self.get_logger().error(f'Error processing the mask, likely a division by 0 calculating the center: {e}')
+        else:
+            self.joint1_publisher_.publish(self.latest_joint1_command)
+            self.joint2_publisher_.publish(self.latest_joint2_command)
+            self.get_logger().info('No feature detected')
 
 
 def main(args=None):
     rclpy.init(args=args)
-    visual_servoing = VisualServoing()
+    tracker = Tracker()
     # Add your main code here
-    rclpy.spin(visual_servoing)
-    visual_servoing.destroy_node()
+    rclpy.spin(tracker)
+    tracker.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':
