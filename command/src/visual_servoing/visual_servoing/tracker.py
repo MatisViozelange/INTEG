@@ -21,8 +21,8 @@ class Tracker(Node):
         # publisher of the joint2 position command
         self.joint2_publisher_ = self.create_publisher(Float64, '/scara/joint_2_cmd_pos', 10)
 
-        self.latest_joint1 = 0
-        self.latest_joint2 = 0
+        self.latest_joint1_command = Float64()
+        self.latest_joint2_command = Float64()
 
     def joint_states_callback(self, msg):
         self.q1 = msg.position[1]
@@ -48,7 +48,7 @@ class Tracker(Node):
             image_width_meters = 2*distance_to_target*math.tan(horizontal_fov/2)
             image_height_meters = 2*distance_to_target*math.tan(vertical_fov/2)
 
-            error_vector = [error_x/640*image_width_meters,error_y/400*image_height_meters] # convert the error vector from pixels to meters
+            error_vector = [-error_y/400*image_height_meters,-error_x/640*image_width_meters] # convert the error vector from pixels to meters
 
             desired_position = [-1 * component for component in error_vector]
 
