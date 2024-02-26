@@ -6,10 +6,11 @@
         "limitSymbolsToIncludedHeaders": false
       },
       "includePath": [
-        "/home/t-lemmel/Integ/install/integ_my_robot_interfaces/include/**",
-        "/home/t-lemmel/Aquabot_Tom/install/my_robot_interfaces/include/**",
-        "/home/t-lemmel/Aquabot_Tom/install/aquabot_ekf/include/**",
+        "/home/obiwann/ros2_ws/install/integ_my_robot_interfaces/include/**",
+        "/home/obiwann/vrx_ws/install/include/**",
         "/opt/ros/humble/include/**",
+        "/home/obiwann/ros2_ws/src/Aquabot Matis/astar_path_planner/include/**",
+        "/home/obiwann/ros2_ws/src/Aquabot Matis/traj_test/include/**",
         "/usr/include/**"
       ],
       "name": "ROS",

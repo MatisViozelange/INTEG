@@ -1,1 +1,0 @@
-/home/t-lemmel/Integ/build/integ_my_robot_interfaces/rosidl_generator_c/integ_my_robot_interfaces/msg/detail/center_and_area__type_support.h
