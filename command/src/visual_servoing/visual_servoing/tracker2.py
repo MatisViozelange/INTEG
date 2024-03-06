@@ -37,6 +37,7 @@ class Tracker(Node):
 
             try : # implement the command law here
 
+                print("Feature detected")
                 error_x = abs(320 - msg.center.x) # 320 is the center of the image
                 error_y = abs(200 - msg.center.y) # 200 is the center of the image
 
@@ -52,7 +53,7 @@ class Tracker(Node):
                 alpha_y = image_height_meters/400 # the conversion factor from pixels to meters in the y direction
 
                 focal_length = 50
-                alpha = np.array([alpha_x*focal_length, alpha_y*focal_length])
+                alpha = np.array([[alpha_x*focal_length, 0], [0, alpha_y*focal_length]])
 
 
                 # rotation matrix of -pi/2 around x and z
@@ -71,11 +72,12 @@ class Tracker(Node):
                             [0, 0, 1]])  
 
                 #multiply Pixel2MeterMatrix and L2d and W and J
-                Js = np.dot(np.dot(np.dot(alpha, L2d), W), J)
+                A = np.dot(alpha, L2d)
+                Js = np.dot(np.dot(A, W), J)
                 Js_pseudo_inv = np.linalg.pinv(Js)    
 
                 coef = 0.1
-                q_dot = np.dot(Js_pseudo_inv, np.transpose([-coef*error_x, -coef*error_y, 0]))
+                q_dot = np.dot(Js_pseudo_inv, np.transpose([-coef*error_x, -coef*error_y]))
 
                 joint1_command.data = q_dot[0]
                 joint2_command.data = q_dot[1]
