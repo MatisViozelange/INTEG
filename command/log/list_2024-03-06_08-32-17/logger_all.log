@@ -1,0 +1,70 @@
+[1.859s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command']
+[1.859s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7faa88871de0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7faa88870970>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7faa88870970>>)
+[1.943s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.943s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.943s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.943s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.943s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.943s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command'
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extensions ['ignore', 'ignore_ament_install']
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extension 'ignore'
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extension 'ignore_ament_install'
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extensions ['colcon_pkg']
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extension 'colcon_pkg'
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extensions ['colcon_meta']
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extension 'colcon_meta'
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extensions ['ros']
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extension 'ros'
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extensions ['cmake', 'python']
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extension 'cmake'
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extension 'python'
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extensions ['python_setup_py']
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command) by extension 'python_setup_py'
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/log) by extensions ['ignore', 'ignore_ament_install']
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/log) by extension 'ignore'
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/log) ignored
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extensions ['ignore', 'ignore_ament_install']
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extension 'ignore'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extension 'ignore_ament_install'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extensions ['colcon_pkg']
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extension 'colcon_pkg'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extensions ['colcon_meta']
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extension 'colcon_meta'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extensions ['ros']
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extension 'ros'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extensions ['cmake', 'python']
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extension 'cmake'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extension 'python'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extensions ['python_setup_py']
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src) by extension 'python_setup_py'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/Integ_my_robot_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/Integ_my_robot_interfaces) by extension 'ignore'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/Integ_my_robot_interfaces) by extension 'ignore_ament_install'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/Integ_my_robot_interfaces) by extensions ['colcon_pkg']
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/Integ_my_robot_interfaces) by extension 'colcon_pkg'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/Integ_my_robot_interfaces) by extensions ['colcon_meta']
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/Integ_my_robot_interfaces) by extension 'colcon_meta'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/Integ_my_robot_interfaces) by extensions ['ros']
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/Integ_my_robot_interfaces) by extension 'ros'
+[1.975s] DEBUG:colcon.colcon_core.package_identification:Package '/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/Integ_my_robot_interfaces' with type 'ros.ament_cmake' and name 'integ_my_robot_interfaces'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/integ_description) by extensions ['ignore', 'ignore_ament_install']
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/integ_description) by extension 'ignore'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/integ_description) by extension 'ignore_ament_install'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/integ_description) by extensions ['colcon_pkg']
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/integ_description) by extension 'colcon_pkg'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/integ_description) by extensions ['colcon_meta']
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/integ_description) by extension 'colcon_meta'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/integ_description) by extensions ['ros']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/integ_description) by extension 'ros'
+[1.977s] DEBUG:colcon.colcon_core.package_identification:Package '/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/integ_description' with type 'ros.ament_cmake' and name 'integ_description'
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/visual_servoing) by extensions ['ignore', 'ignore_ament_install']
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/visual_servoing) by extension 'ignore'
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/visual_servoing) by extension 'ignore_ament_install'
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/visual_servoing) by extensions ['colcon_pkg']
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/visual_servoing) by extension 'colcon_pkg'
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/visual_servoing) by extensions ['colcon_meta']
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/visual_servoing) by extension 'colcon_meta'
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/visual_servoing) by extensions ['ros']
+[1.978s] Level 1:colcon.colcon_core.package_identification:_identify(/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/visual_servoing) by extension 'ros'
+[1.980s] DEBUG:colcon.colcon_core.package_identification:Package '/home/obiwann/ros2_ws/src/INTEG_project/INTEG/command/src/visual_servoing' with type 'ros.ament_python' and name 'visual_servoing'
+[1.980s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
