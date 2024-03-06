@@ -1,0 +1,1 @@
+/home/t-lemmel/Integ/build/integ_my_robot_interfaces/ament_cmake_python/integ_my_robot_interfaces/integ_my_robot_interfaces.egg-info/top_level.txt

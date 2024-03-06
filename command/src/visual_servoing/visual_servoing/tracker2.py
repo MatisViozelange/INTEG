@@ -38,32 +38,32 @@ class Tracker(Node):
             try : # implement the command law here
 
                 print("Feature detected")
-                error_x = abs(320 - msg.center.x) # 320 is the center of the image
-                error_y = abs(200 - msg.center.y) # 200 is the center of the image
 
-                vertical_fov = 2.094 # the vertical field of view of the camera in radians
-                horizontal_fov = 2.094 # the horizontal field of view of the camera in radians
-
-                distance_to_target = 0.11 # the distance from the camera to the target in meters
-
-                image_width_meters = 2*distance_to_target*math.tan(horizontal_fov/2)
-                image_height_meters = 2*distance_to_target*math.tan(vertical_fov/2)
-
-                alpha_x = image_width_meters/640 # the conversion factor from pixels to meters in the x direction
-                alpha_y = image_height_meters/400 # the conversion factor from pixels to meters in the y direction
+                alpha_x = 184.83640670776367 # the conversion factor from pixels to meters in the x direction
+                alpha_y = 184.83641147613525 # the conversion factor from pixels to meters in the y direction
 
                 focal_length = 50
                 alpha = np.array([[alpha_x*focal_length, 0], [0, alpha_y*focal_length]])
-
 
                 # rotation matrix of -pi/2 around x and z
                 RcamOpt_cam = np.array([[0, 0, 1], [1, 0, 0], [0, 1, 0]])
                 Rcam_EEframe = np.array([[0, 0, 1], [0, 1, 0], [-1, 0, 0]])
 
-                W = np.dot(RcamOpt_cam, Rcam_EEframe)
+                R = np.dot(RcamOpt_cam, Rcam_EEframe)
 
-                L2d = np.array([[-1/distance_to_target, 0, 0], [0, -1/distance_to_target, 0]])
-            
+                translation_ee_camera_x = np.array([[0, -0.01, 0],[0.01 ,0 ,0],[0, 0, 0]])  # the translation vector from the end effector to the camera in the end effector frame
+
+                W = np.block([[R, np.dot(translation_ee_camera_x,R)], [np.zeros(3,3), R]]) # the transformation matrix from the end effector frame to the camera frame
+
+                y = (msg.center.y - 200)/alpha_y
+                x = (msg.center.x - 320)/alpha_x
+
+                Z = 0.11 # the distance from the camera to the target in meters
+                X = x*Z
+                Y = y*Z
+
+                L = np.array([[-1/Z, 0, x/Z, x*y, -(1+x*x), y], [0, -1/Z, y/Z, 1+y*y, -x*y, -x]])
+
                 l1 = 0.28002 # the length of the first link
                 l2 = 0.28002 # the length of the second link
 
