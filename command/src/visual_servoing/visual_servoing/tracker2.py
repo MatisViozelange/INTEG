@@ -61,7 +61,7 @@ class Tracker(Node):
 
                 W = np.dot(RcamOpt_cam, Rcam_EEframe)
 
-                L2d = np.array([[-1/distance_to_target, 0], [0, -1/distance_to_target]])
+                L2d = np.array([[-1/distance_to_target, 0, 0], [0, -1/distance_to_target, 0]])
             
                 l1 = 0.28002 # the length of the first link
                 l2 = 0.28002 # the length of the second link
@@ -75,7 +75,7 @@ class Tracker(Node):
                 Js_pseudo_inv = np.linalg.pinv(Js)    
 
                 coef = 0.1
-                q_dot = np.dot(Js_pseudo_inv, [-coef*error_x, -coef*error_y])
+                q_dot = np.dot(Js_pseudo_inv, np.transpose([-coef*error_x, -coef*error_y, 0]))
 
                 joint1_command.data = q_dot[0]
                 joint2_command.data = q_dot[1]
