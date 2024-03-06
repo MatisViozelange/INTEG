@@ -48,26 +48,30 @@ class Tracker(Node):
                 image_width_meters = 2*distance_to_target*math.tan(horizontal_fov/2)
                 image_height_meters = 2*distance_to_target*math.tan(vertical_fov/2)
 
-                alpha_x = 640/image_width_meters # the conversion factor from pixels to meters in the x direction
-                alpha_y = 400/image_height_meters # the conversion factor from pixels to meters in the y direction
+                alpha_x = image_width_meters/640 # the conversion factor from pixels to meters in the x direction
+                alpha_y = image_height_meters/400 # the conversion factor from pixels to meters in the y direction
 
-                l1 = 0.28002 # the length of the first link
-                l2 = 0.28002 # the length of the second link
+                focal_length = 50
+                alpha = np.array([alpha_x*focal_length, alpha_y*focal_length])
+
 
                 # rotation matrix of -pi/2 around x and z
-                W = np.array([[0, -1, 0], [-1, 0, 0], [0, 0, -1]])
+                RcamOpt_cam = np.array([[0, 0, 1], [1, 0, 0], [0, 1, 0]])
+                Rcam_EEframe = np.array([[0, 0, 1], [0, 1, 0], [-1, 0, 0]])
+
+                W = np.dot(RcamOpt_cam, Rcam_EEframe)
+
+                L2d = np.array([[-1/distance_to_target, 0], [0, -1/distance_to_target]])
+            
+                l1 = 0.28002 # the length of the first link
+                l2 = 0.28002 # the length of the second link
 
                 J = np.array([[-l1*np.sin(self.q1)-l2*np.sin(self.q1+self.q2), -l2*np.sin(self.q1+self.q2),0],
                             [l1*np.cos(self.q1)+l2*np.cos(self.q1+self.q2), l2*np.cos(self.q1+self.q2),0],
                             [0, 0, 1]])  
-                
-                Pixel2MeterMatrix = np.array([[alpha_x, 0], [0, alpha_y]])
-
-                #L2d = np.array([[-1/distance_to_target,0 , pow(error_x/(alpha_x),2)/distance_to_target], [0, -1/distance_to_target , pow(error_y/(alpha_y),2)/distance_to_target]])
-                L2d = np.eye(2,3)
 
                 #multiply Pixel2MeterMatrix and L2d and W and J
-                Js = np.dot(np.dot(Pixel2MeterMatrix, L2d), np.dot(W, J))
+                Js = np.dot(np.dot(np.dot(alpha, L2d), W), J)
                 Js_pseudo_inv = np.linalg.pinv(Js)    
 
                 coef = 0.1

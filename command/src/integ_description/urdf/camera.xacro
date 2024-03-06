@@ -39,6 +39,7 @@
         <near>0.1</near>
         <far>100</far>
     </clip>
+    <focal_length>50</focal_length>
     </camera>
     <always_on>1</always_on>
     <update_rate>30</update_rate>
