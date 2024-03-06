@@ -27,19 +27,25 @@ class FeatureDetector(Node):
 
         converted_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
 
-        window_name = 'Image'
-        cv2.imshow(window_name, converted_image) 
+        #convert from RGB to HSV
+        
+        converted_image_HSV = cv2.cvtColor(cv_image, cv2.COLOR_BGR2HSV)
+        #filter blue color using HSV format
+        lower_blue_hsv = np.array([0, 50, 50])
+        upper_blue_hsv = np.array([255, 255, 255])
+
+        window_name = 'Image in HSV format'
+        cv2.imshow(window_name, converted_image_HSV) 
         cv2.waitKey(3)
 
+        # Define the lower and upper bounds for the blue color in BGR (OpenCV) format
+        #lower_blue = np.array([100, 0, 0])
+        #upper_blue = np.array([255, 100, 100])
 
-        # Define the lower and upper bounds for the blue color
-        lower_blue = np.array([150, 0, 0])
-        upper_blue = np.array([255, 100, 100])
+        # Threshold the image to get only the blue pixels using HSV
+        mask = cv2.inRange(converted_image_HSV, lower_blue_hsv, upper_blue_hsv)
 
-        # Threshold the image to get only the blue pixels
-        mask = cv2.inRange(converted_image, lower_blue, upper_blue)
-
-        cv2.imshow('Blue Mask', mask) 
+        cv2.imshow('Blue Mask', mask)
         cv2.waitKey(3)
 
         # Count the number of blue pixels

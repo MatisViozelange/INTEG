@@ -63,8 +63,9 @@ class Tracker(Node):
                 
                 Pixel2MeterMatrix = np.array([[alpha_x, 0], [0, alpha_y]])
 
-                L2d = np.array([[-1/distance_to_target,0 , pow(error_x/(alpha_x),2)/distance_to_target], [0, -1/distance_to_target , pow(error_y/(alpha_y),2)/distance_to_target]])
-                
+                #L2d = np.array([[-1/distance_to_target,0 , pow(error_x/(alpha_x),2)/distance_to_target], [0, -1/distance_to_target , pow(error_y/(alpha_y),2)/distance_to_target]])
+                L2d = np.eye(2,3)
+
                 #multiply Pixel2MeterMatrix and L2d and W and J
                 Js = np.dot(np.dot(Pixel2MeterMatrix, L2d), np.dot(W, J))
                 Js_pseudo_inv = np.linalg.pinv(Js)    
@@ -75,6 +76,9 @@ class Tracker(Node):
                 joint1_command.data = q_dot[0]
                 joint2_command.data = q_dot[1]
 
+                #print the commands in degrees
+                self.get_logger().info(f'Joint1 Command: {math.degrees(joint1_command.data)}')
+                self.get_logger().info(f'Joint2 Command: {math.degrees(joint2_command.data)}')
                 self.joint1_publisher_.publish(joint1_command)
                 self.joint2_publisher_.publish(joint2_command)
 
