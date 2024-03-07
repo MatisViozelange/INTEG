@@ -40,12 +40,13 @@ class Tracker(Node):
                 print("Feature detected")
 
                 # Interaction matrix
-
+                #Faux
                 alpha_x = 184.83640670776367 # the conversion factor from pixels to meters in the x direction
-                alpha_y = 184.83641147613525 # the conversion factor from pixels to meters in the y direction
+                alpha_y = alpha_x # the conversion factor from pixels to meters in the y direction
 
                 y = (msg.center.y - 200)/alpha_y
                 x = (msg.center.x - 320)/alpha_x
+                print(f'x: {x}, y: {y}')
 
                 Z = 0.11 # the distance from the camera to the target in meters
 
@@ -70,11 +71,10 @@ class Tracker(Node):
                 # Constructing W as a 6x6 matrix
                 W = np.block([[RcamOpt_EEframe, txR],[np.zeros((3, 3)), RcamOpt_EEframe]])
 
-                
                 # Rotation matrix from the end effector frame to the base frame
                 R0_ee = np.array([[np.cos(self.q1+self.q2), -np.sin(self.q1+self.q2), 0], [np.sin(self.q1+self.q2), np.cos(self.q1+self.q2), 0], [0, 0, 1]])
 
-                R = np.block([[R0_ee, np.zeros(3,3)], [np.zeros(3,3), R0_ee]]) # the transformation matrix from the end effector frame to the base frame
+                R = np.block([[R0_ee, np.zeros((3,3))], [np.zeros((3,3)), R0_ee]]) # the transformation matrix from the end effector frame to the base frame
                 
                 # Jaccobian matrix of RR robot
                 l1 = 0.28002 # the length of the first link
@@ -91,7 +91,7 @@ class Tracker(Node):
                 lambda_ = 1 # the gain of the control law
                 
                 # Calculate the desired velocity
-                q_dot = np.dot(Js_pseudo_inv, lambda_*np.array([x, y]))
+                q_dot = np.dot(Js_pseudo_inv, -lambda_*np.array([x, y]))
 
                 joint1_command.data = q_dot[0]
                 joint2_command.data = q_dot[1]
