@@ -39,45 +39,49 @@ class Tracker(Node):
 
                 print("Feature detected")
 
+                # Interaction matrix
+
                 alpha_x = 184.83640670776367 # the conversion factor from pixels to meters in the x direction
                 alpha_y = 184.83641147613525 # the conversion factor from pixels to meters in the y direction
-
-                focal_length = 50
-                alpha = np.array([[alpha_x*focal_length, 0], [0, alpha_y*focal_length]])
-
-                # rotation matrix of -pi/2 around x and z
-                RcamOpt_cam = np.array([[0, 0, 1], [1, 0, 0], [0, 1, 0]])
-                Rcam_EEframe = np.array([[0, 0, 1], [0, 1, 0], [-1, 0, 0]])
-
-                R = np.dot(RcamOpt_cam, Rcam_EEframe)
-
-                translation_ee_camera_x = np.array([[0, -0.01, 0],[0.01 ,0 ,0],[0, 0, 0]])  # the translation vector from the end effector to the camera in the end effector frame
-
-                W = np.block([[R, np.dot(translation_ee_camera_x,R)], [np.zeros(3,3), R]]) # the transformation matrix from the end effector frame to the camera frame
 
                 y = (msg.center.y - 200)/alpha_y
                 x = (msg.center.x - 320)/alpha_x
 
                 Z = 0.11 # the distance from the camera to the target in meters
-                X = x*Z
-                Y = y*Z
 
                 L = np.array([[-1/Z, 0, x/Z, x*y, -(1+x*x), y], [0, -1/Z, y/Z, 1+y*y, -x*y, -x]])
 
+                # Transformation matrix from the camera frame to the end effector frame
+                RcamOpt_cam = np.array([[0, 0, 1], [1, 0, 0], [0, 1, 0]])
+                Rcam_EEframe = np.array([[0, 0, 1], [0, 1, 0], [-1, 0, 0]])
+
+                RcamOpt_EEframe = np.dot(RcamOpt_cam, Rcam_EEframe)
+
+                translation_ee_camera_x = np.array([[0, -0.01, 0],[0.01 ,0 ,0],[0, 0, 0]])  # the translation vector from the end effector to the camera in the end effector frame
+
+                W = np.block([[RcamOpt_EEframe, np.dot(translation_ee_camera_x,RcamOpt_EEframe)], [np.zeros(3,3), RcamOpt_EEframe]]) # the transformation matrix from the end effector frame to the camera frame
+
+                # Rotation matrix from the end effector frame to the base frame
+                R0_ee = np.array([[np.cos(self.q1+self.q2), -np.sin(self.q1+self.q2), 0], [np.sin(self.q1+self.q2), np.cos(self.q1+self.q2), 0], [0, 0, 1]])
+
+                R = np.block([[R0_ee, np.zeros(3,3)], [np.zeros(3,3), R0_ee]]) # the transformation matrix from the end effector frame to the base frame
+                
+                # Jaccobian matrix of RR robot
                 l1 = 0.28002 # the length of the first link
                 l2 = 0.28002 # the length of the second link
 
-                J = np.array([[-l1*np.sin(self.q1)-l2*np.sin(self.q1+self.q2), -l2*np.sin(self.q1+self.q2),0],
-                            [l1*np.cos(self.q1)+l2*np.cos(self.q1+self.q2), l2*np.cos(self.q1+self.q2),0],
-                            [0, 0, 1]])  
+                J = np.array([[-l1*np.sin(self.q1)-l2*np.sin(self.q1+self.q2), -l2*np.sin(self.q1+self.q2)],
+                            [l1*np.cos(self.q1)+l2*np.cos(self.q1+self.q2), l2*np.cos(self.q1+self.q2)],
+                            [0, 0], [0, 0], [0, 0], [1, 1]])  
+                
+                # Js matrix
+                Js = np.dot(L,np.dot(W,np.dot(R,J)))
+                Js_pseudo_inv = np.linalg.pinv(Js)
 
-                #multiply Pixel2MeterMatrix and L2d and W and J
-                A = np.dot(alpha, L2d)
-                Js = np.dot(np.dot(A, W), J)
-                Js_pseudo_inv = np.linalg.pinv(Js)    
-
-                coef = 0.1
-                q_dot = np.dot(Js_pseudo_inv, np.transpose([-coef*error_x, -coef*error_y]))
+                lambda_ = 1 # the gain of the control law
+                
+                # Calculate the desired velocity
+                q_dot = np.dot(Js_pseudo_inv, lambda_*np.array([x, y]))
 
                 joint1_command.data = q_dot[0]
                 joint2_command.data = q_dot[1]
