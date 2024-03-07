@@ -5,6 +5,7 @@ from std_msgs.msg import Float64
 import numpy as np
 import math
 from sensor_msgs.msg import JointState
+from cvxopt import matrix, solvers
 
 class Tracker(Node):
     def __init__(self):
@@ -86,12 +87,49 @@ class Tracker(Node):
                 
                 # Js matrix
                 Js = np.dot(L,np.dot(W,np.dot(R,J)))
-                Js_pseudo_inv = np.linalg.pinv(Js)
-
-                lambda_ = 1 # the gain of the control law
                 
-                # Calculate the desired velocity
-                q_dot = np.dot(Js_pseudo_inv, -lambda_*np.array([x, y]))
+                # Optimal q_dot
+                s = np.array([x, y])
+                lambda_ = 1
+
+                # Calculate P and q for the QP problem
+                P = matrix(np.dot(Js.T, Js))  # P = Js^TJs
+                q = matrix(-lambda_ * np.dot(Js.T, s))  # q = -Js^T * lambda * s
+
+                care_param = 0.8
+                #first task : joint limits
+                G1 = np.array([[1, 0], [-1, 0], [0, 1], [0, -1]])
+                q1_max = care_param*math.pi
+                q1_min = care_param*0
+                q2_max = care_param*2
+                q2_min = care_param*-2
+                alpha = 1
+
+                h1 = np.array([alpha*(q1_max - self.q1), -alpha*(q1_min - self.q1), alpha*(q2_max - self.q2), -alpha*(q2_min - self.q2)])
+
+                #second task : joint velocity limits
+                G2 = np.array([[1, 0], [-1, 0], [0, 1], [0, -1]])
+                q_dot_max = care_param*1
+
+                h2 = care_param*np.array([q_dot_max, q_dot_max, q_dot_max, q_dot_max])
+
+                # Constraints definition
+
+                # Reshape h1 and h2 to ensure they are column vectors
+                h1 = h1.reshape(-1, 1)  
+                h2 = h2.reshape(-1, 1)  
+                G = np.vstack((G1, G2)).astype(np.float64)  # Ensure G is double precision
+                G = matrix(G)  # Convert to cvxopt matrix
+                h = np.vstack((h1, h2)).astype(np.float64)  # Similarly, ensure h is double precision
+                h = matrix(h)
+                A = None
+                b = None
+
+                # Solve QP problem
+                sol = solvers.qp(P, q, G, h, A, b)
+
+                # Extract and print the optimal q_dot
+                q_dot = sol['x']
 
                 joint1_command.data = q_dot[0]
                 joint2_command.data = q_dot[1]
