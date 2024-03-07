@@ -40,12 +40,12 @@ class Tracker(Node):
                 print("Feature detected")
 
                 # Interaction matrix
-                #Faux
                 alpha_x = 184.83640670776367 # the conversion factor from pixels to meters in the x direction
                 alpha_y = alpha_x # the conversion factor from pixels to meters in the y direction
 
                 y = (msg.center.y - 200)/alpha_y
                 x = (msg.center.x - 320)/alpha_x
+                print(f'center: {msg.center.x}, {msg.center.y}')
                 print(f'x: {x}, y: {y}')
 
                 Z = 0.11 # the distance from the camera to the target in meters
@@ -54,9 +54,9 @@ class Tracker(Node):
 
                 # Transformation matrix from the camera frame to the end effector frame
                 # Rotation matrices
-                RcamOpt_cam = np.array([[0, 0, 1], [1, 0, 0], [0, 1, 0]])
+                Rcam_camOpt = np.array([[0, 0, 1], [-1, 0, 0], [0, -1, 0]])
                 Rcam_EEframe = np.array([[0, 0, 1], [0, 1, 0], [-1, 0, 0]])
-                RcamOpt_EEframe = np.dot(RcamOpt_cam, Rcam_EEframe)
+                RcamOpt_EEframe = np.dot( Rcam_EEframe, Rcam_camOpt)
 
                 # Translation vector
                 translation_ee_camera_x = np.array([0, -0.01, 0])  # Assuming this vector represents the translation
