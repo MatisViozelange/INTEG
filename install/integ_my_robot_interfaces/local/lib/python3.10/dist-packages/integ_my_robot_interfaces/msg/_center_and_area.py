@@ -1,1 +1,0 @@
-/home/t-lemmel/Integ/build/integ_my_robot_interfaces/rosidl_generator_py/integ_my_robot_interfaces/msg/_center_and_area.py

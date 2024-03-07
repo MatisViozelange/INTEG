@@ -1,2 +1,0 @@
-integ_my_robot_interfaces
-setuptools

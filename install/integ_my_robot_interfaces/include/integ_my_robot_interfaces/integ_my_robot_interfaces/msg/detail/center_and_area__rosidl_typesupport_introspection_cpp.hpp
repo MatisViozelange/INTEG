@@ -1,1 +1,0 @@
-/home/t-lemmel/Integ/build/integ_my_robot_interfaces/rosidl_typesupport_introspection_cpp/integ_my_robot_interfaces/msg/detail/center_and_area__rosidl_typesupport_introspection_cpp.hpp
