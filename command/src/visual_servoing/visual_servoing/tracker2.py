@@ -52,15 +52,25 @@ class Tracker(Node):
                 L = np.array([[-1/Z, 0, x/Z, x*y, -(1+x*x), y], [0, -1/Z, y/Z, 1+y*y, -x*y, -x]])
 
                 # Transformation matrix from the camera frame to the end effector frame
+                # Rotation matrices
                 RcamOpt_cam = np.array([[0, 0, 1], [1, 0, 0], [0, 1, 0]])
                 Rcam_EEframe = np.array([[0, 0, 1], [0, 1, 0], [-1, 0, 0]])
-
                 RcamOpt_EEframe = np.dot(RcamOpt_cam, Rcam_EEframe)
 
-                translation_ee_camera_x = np.array([[0, -0.01, 0],[0.01 ,0 ,0],[0, 0, 0]])  # the translation vector from the end effector to the camera in the end effector frame
+                # Translation vector
+                translation_ee_camera_x = np.array([0, -0.01, 0])  # Assuming this vector represents the translation
 
-                W = np.block([[RcamOpt_EEframe, np.dot(translation_ee_camera_x,RcamOpt_EEframe)], [np.zeros(3,3), RcamOpt_EEframe]]) # the transformation matrix from the end effector frame to the camera frame
+                # Skew-symmetric matrix of the translation vector
+                tx, ty, tz = translation_ee_camera_x
+                t_skew = np.array([[0, -tz, ty], [tz, 0, -tx], [-ty, tx, 0]])
 
+                # Upper-right block: [t]x.R
+                txR = np.dot(t_skew, RcamOpt_EEframe)
+
+                # Constructing W as a 6x6 matrix
+                W = np.block([[RcamOpt_EEframe, txR],[np.zeros((3, 3)), RcamOpt_EEframe]])
+
+                
                 # Rotation matrix from the end effector frame to the base frame
                 R0_ee = np.array([[np.cos(self.q1+self.q2), -np.sin(self.q1+self.q2), 0], [np.sin(self.q1+self.q2), np.cos(self.q1+self.q2), 0], [0, 0, 1]])
 
