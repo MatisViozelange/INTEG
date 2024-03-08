@@ -58,8 +58,8 @@ class Tracker(Node):
                 #Rcam_camOpt = np.array([[0, 0, 1], [-1, 0, 0], [0, -1, 0]])
                 #Rcam_EEframe = np.array([[0, 0, 1], [0, 1, 0], [-1, 0, 0]])
                 #RcamOpt_EEframe = np.dot( Rcam_EEframe, Rcam_camOpt)
-
-                RcamOpt_EEframe = np.array([[0, 0, -1], [0, 1, 0], [1, 0, 0]])
+                
+                RcamOpt_EEframe = np.array([[0, -1, 0], [-1, 0, 0], [0, 0, -1]])
 
                 # Translation vector
                 translation_ee_camera_x = np.array([0, -0.01, 0])  # Assuming this vector represents the translation
@@ -75,7 +75,10 @@ class Tracker(Node):
                 W = np.block([[RcamOpt_EEframe, txR],[np.zeros((3, 3)), RcamOpt_EEframe]])
 
                 # Rotation matrix from the end effector frame to the base frame
-                R0_ee = np.array([[np.cos(self.q1+self.q2), -np.sin(self.q1+self.q2), 0], [np.sin(self.q1+self.q2), np.cos(self.q1+self.q2), 0], [0, 0, 1]])
+                q12 = self.q1 + self.q2 + math.pi/2
+                R0_ee = np.array([[np.cos(q12), -np.sin(q12), 0], [np.sin(q12), np.cos(q12), 0], [0, 0, 1]])
+                print(f'R0_ee: {R0_ee}')
+
 
                 R = np.block([[R0_ee, np.zeros((3,3))], [np.zeros((3,3)), R0_ee]]) # the transformation matrix from the end effector frame to the base frame
                 
@@ -92,7 +95,7 @@ class Tracker(Node):
                 
                 # Optimal q_dot
                 s = np.array([x, y])
-                lambda_ = 1
+                lambda_ = 5
 
                 # Calculate P and q for the QP problem
                 P = matrix(np.dot(Js.T, Js))  # P = Js^TJs
@@ -111,7 +114,7 @@ class Tracker(Node):
 
                 #second task : joint velocity limits
                 G2 = np.array([[1, 0], [-1, 0], [0, 1], [0, -1]])
-                q_dot_max = care_param*1
+                q_dot_max = care_param*10
 
                 h2 = care_param*np.array([q_dot_max, q_dot_max, q_dot_max, q_dot_max])
 
