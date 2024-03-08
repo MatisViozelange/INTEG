@@ -55,9 +55,11 @@ class Tracker(Node):
 
                 # Transformation matrix from the camera frame to the end effector frame
                 # Rotation matrices
-                Rcam_camOpt = np.array([[0, 0, 1], [-1, 0, 0], [0, -1, 0]])
-                Rcam_EEframe = np.array([[0, 0, 1], [0, 1, 0], [-1, 0, 0]])
-                RcamOpt_EEframe = np.dot( Rcam_EEframe, Rcam_camOpt)
+                #Rcam_camOpt = np.array([[0, 0, 1], [-1, 0, 0], [0, -1, 0]])
+                #Rcam_EEframe = np.array([[0, 0, 1], [0, 1, 0], [-1, 0, 0]])
+                #RcamOpt_EEframe = np.dot( Rcam_EEframe, Rcam_camOpt)
+
+                RcamOpt_EEframe = np.array([[0, 0, -1], [0, 1, 0], [1, 0, 0]])
 
                 # Translation vector
                 translation_ee_camera_x = np.array([0, -0.01, 0])  # Assuming this vector represents the translation
@@ -96,11 +98,11 @@ class Tracker(Node):
                 P = matrix(np.dot(Js.T, Js))  # P = Js^TJs
                 q = matrix(-lambda_ * np.dot(Js.T, s))  # q = -Js^T * lambda * s
 
-                care_param = 0.8
+                care_param = 0.9
                 #first task : joint limits
                 G1 = np.array([[1, 0], [-1, 0], [0, 1], [0, -1]])
-                q1_max = care_param*math.pi
-                q1_min = care_param*0
+                q1_max = care_param*0
+                q1_min = care_param*-3.1
                 q2_max = care_param*2
                 q2_min = care_param*-2
                 alpha = 1
