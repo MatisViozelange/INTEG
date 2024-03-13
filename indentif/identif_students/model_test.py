@@ -8,6 +8,8 @@ from scipy.io import loadmat
 # from scipy.signal import butter
 import scipy.io as sio
 import scipy.signal as sig
+import pandas as pd
+import seaborn as sns
 
 
 
@@ -160,13 +162,22 @@ parNames = np.array(["Ja", "zz2", "mx2", "Ia2", "Fs1", "of1", "Fv1", "Fs2", "of2
 K_ident = np.array([Ja_id, zz2_id, mx2_id, Ia2_id, Fs1_id, of1_id, Fv1_id, Fs2_id, of2_id, Fv2_id])
 
 # Identification des paramètres à élimer
-del_col = [] # Choose the columns to eliminate in K_ident
+del_col = [2,3,4,5,6,8] # Choose the columns to eliminate in K_ident
 K_ident = np.delete(K_ident, del_col)
 W = np.delete(W, del_col, axis=1)
 
 Gam_id = np.dot(W, K_ident)
-Gam_id_1 = Gam_id[:16563]
-Gam_id_2 = Gam_id[16563:]
+Gam_id_1 = Gam_id[:Gam1.size]
+Gam_id_2 = Gam_id[Gam1.size:]
+
+# See the correlation between the identified torques and the real torques
+correlation_1 = np.corrcoef(Gam1, Gam_id_1)[0, 1]
+correlation_2 = np.corrcoef(Gam2, Gam_id_2)[0, 1]
+
+print(f"Correlation between Torque 1 and Identified Torque 1: {correlation_1}")
+print(f"Correlation between Torque 2 and Identified Torque 2: {correlation_2}")
+
+
 
 # Plot the torques to compare them 
 # Plot Torque 1 and Identified Torque 1
